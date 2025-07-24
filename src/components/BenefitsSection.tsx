@@ -1,10 +1,10 @@
 import { Card } from "@/components/ui/card";
-import { Target, Lightbulb, Building2, MapPin, Sparkles } from "lucide-react";
+import { TrendingUp, Lightbulb, CreditCard, BarChart3, Sparkles } from "lucide-react";
 
 const BenefitsSection = () => {
   const benefits = [
     {
-      icon: Target,
+      icon: TrendingUp,
       title: "Understand Your Creditworthiness",
       description: "Get a comprehensive view of your financial health with detailed analysis powered by advanced AI algorithms.",
       color: "primary",
@@ -18,14 +18,14 @@ const BenefitsSection = () => {
       gradient: "from-warning/10 to-warning/20",
     },
     {
-      icon: Building2,
+      icon: CreditCard,
       title: "Prepare for Loan Applications",
       description: "Know exactly where you stand before applying for mortgages, personal loans, or business financing.",
       color: "success",
       gradient: "from-success/10 to-success/20",
     },
     {
-      icon: MapPin,
+      icon: BarChart3,
       title: "Smart Credit Analysis",
       description: "Built with advanced AI technology to provide accurate, comprehensive credit analysis tailored to your profile.",
       color: "info",

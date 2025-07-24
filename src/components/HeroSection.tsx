@@ -1,14 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Shield, Users, Lock, MapPin, ArrowRight, Zap } from "lucide-react";
+import { TrendingUp, BarChart3, Shield, CreditCard, ArrowRight, Zap } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 
 const HeroSection = () => {
   const trustIndicators = [
-    { icon: MapPin, text: "Local Market Expertise", color: "text-primary" },
+    { icon: TrendingUp, text: "AI-Powered Analysis", color: "text-primary" },
     { icon: Shield, text: "GDPR Compliant", color: "text-success" },
-    { icon: Lock, text: "Bank-Grade Security", color: "text-warning" },
-    { icon: Users, text: "1000+ Satisfied Customers", color: "text-info" },
+    { icon: CreditCard, text: "Bank-Grade Security", color: "text-warning" },
+    { icon: BarChart3, text: "1000+ Credit Reports", color: "text-info" },
   ];
 
   return (
@@ -84,7 +84,7 @@ const HeroSection = () => {
                 <div className="relative">
                   <img
                     src={heroImage}
-                    alt="Professional person reviewing credit dashboard"
+                    alt="Credit score dashboard showing financial analysis and scoring metrics"
                     className="w-full h-auto object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />

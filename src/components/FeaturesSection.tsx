@@ -26,9 +26,9 @@ const FeaturesSection = () => {
       description: "Get your credit score and insights in real-time with our AI engine"
     },
     {
-      icon: Users,
-      title: "Personalized Insights",
-      description: "Tailored recommendations based on your unique financial situation"
+      icon: TrendingUp,
+      title: "Credit Health Monitoring",
+      description: "Track your credit health over time with continuous monitoring and insights"
     },
     {
       icon: Shield,

@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { UserPlus, FileText, TrendingUp, Target, ArrowRight } from "lucide-react";
+import { UserPlus, BarChart3, TrendingUp, Target, ArrowRight } from "lucide-react";
 
 const HowItWorksSection = () => {
   const steps = [
@@ -11,7 +11,7 @@ const HowItWorksSection = () => {
       time: "2 min",
     },
     {
-      icon: FileText,
+      icon: BarChart3,
       title: "Complete Assessment", 
       description: "Answer questions about your finances, employment, and banking relationships.",
       time: "8 min",
