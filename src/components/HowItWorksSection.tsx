@@ -13,7 +13,7 @@ const HowItWorksSection = () => {
     {
       icon: FileText,
       title: "Complete Assessment", 
-      description: "Answer questions about your finances, employment, and banking relationships in Finland.",
+      description: "Answer questions about your finances, employment, and banking relationships.",
       time: "8 min",
     },
     {
@@ -47,8 +47,8 @@ const HowItWorksSection = () => {
             How It Works
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Get your personalized credit assessment in just 10 minutes. Our process is designed 
-            to be simple, secure, and specifically adapted for Finnish consumers.
+            Get your personalized credit assessment in just 10 minutes. Our AI-powered process is designed 
+            to be simple, secure, and specifically adapted for modern banking standards.
           </p>
         </div>
 
@@ -95,7 +95,7 @@ const HowItWorksSection = () => {
               Sample Assessment Questions
             </h3>
             <p className="text-muted-foreground mb-6">
-              Our assessment covers all aspects of your financial profile relevant to Finnish banking standards. 
+              Our AI assessment covers all aspects of your financial profile relevant to modern banking standards. 
               Here's a preview of what we'll ask:
             </p>
             
@@ -114,8 +114,8 @@ const HowItWorksSection = () => {
               Ready to Get Started?
             </h4>
             <p className="text-muted-foreground mb-6">
-              Join thousands of Finnish consumers who have already improved their credit understanding 
-              with NordFi Scoring Platform.
+              Join thousands of customers who have already improved their credit understanding 
+              with NordFi AI-powered credit scoring.
             </p>
             
             <div className="space-y-3">

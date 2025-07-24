@@ -6,14 +6,14 @@ const BenefitsSection = () => {
     {
       icon: Target,
       title: "Understand Your Creditworthiness",
-      description: "Get a comprehensive view of your financial health with detailed analysis tailored to Finnish banking standards.",
+      description: "Get a comprehensive view of your financial health with detailed analysis powered by advanced AI algorithms.",
       color: "primary",
       gradient: "from-primary/10 to-primary/20",
     },
     {
       icon: Lightbulb,
       title: "Get Personalized Improvement Tips", 
-      description: "Receive actionable recommendations to boost your credit score and financial standing in the Finnish market.",
+      description: "Receive actionable recommendations to boost your credit score and financial standing with AI-driven insights.",
       color: "warning",
       gradient: "from-warning/10 to-warning/20",
     },
@@ -26,8 +26,8 @@ const BenefitsSection = () => {
     },
     {
       icon: MapPin,
-      title: "Designed for Finnish Banking System",
-      description: "Built specifically for Finnish consumers, banks, and financial regulations. Not a generic international solution.",
+      title: "Smart Credit Analysis",
+      description: "Built with advanced AI technology to provide accurate, comprehensive credit analysis tailored to your profile.",
       color: "info",
       gradient: "from-info/10 to-info/20",
     },
@@ -52,8 +52,8 @@ const BenefitsSection = () => {
             <span className="gradient-text">Financial Success</span>
           </h2>
           <p className="text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto text-balance leading-relaxed">
-            Get insights that matter for your financial future in Finland. Our platform provides 
-            comprehensive credit analysis designed specifically for the Finnish market.
+            Get insights that matter for your financial future. Our AI-powered platform provides 
+            comprehensive credit analysis designed to help you make smarter financial decisions.
           </p>
         </div>
 
@@ -98,8 +98,8 @@ const BenefitsSection = () => {
             </div>
             <div className="space-y-3">
               <div className="text-5xl font-bold gradient-text">5+</div>
-              <div className="text-muted-foreground font-medium">Finnish Banks Integrated</div>
-              <div className="text-sm text-muted-foreground">Major financial institutions</div>
+              <div className="text-muted-foreground font-medium">Major Banks Integrated</div>
+              <div className="text-sm text-muted-foreground">Leading financial institutions</div>
             </div>
           </div>
         </Card>

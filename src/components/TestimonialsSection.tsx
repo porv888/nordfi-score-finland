@@ -8,7 +8,7 @@ const TestimonialsSection = () => {
       name: "Jukka Virtanen",
       location: "Helsinki",
       occupation: "Software Engineer",
-      testimonial: "NordFi helped me understand my credit before applying for a mortgage. The insights about Finnish banking requirements were exactly what I needed. Got approved at Nordea with a great rate!",
+      testimonial: "NordFi's AI analysis helped me understand my credit before applying for a mortgage. The personalized insights and recommendations were exactly what I needed. Got approved with a great rate!",
       rating: 5,
       initials: "JV"
     },
@@ -16,7 +16,7 @@ const TestimonialsSection = () => {
       name: "Aino Koskinen",
       location: "Tampere", 
       occupation: "Marketing Manager",
-      testimonial: "As someone who moved to Finland from abroad, I had no idea how credit worked here. NordFi made it crystal clear and helped me build my credit profile. Highly recommend!",
+      testimonial: "The AI-powered credit analysis is incredibly detailed and easy to understand. NordFi made it crystal clear what I needed to improve and helped me build a stronger credit profile.",
       rating: 5,
       initials: "AK"
     },
@@ -24,7 +24,7 @@ const TestimonialsSection = () => {
       name: "Mikael Laaksonen",
       location: "Turku",
       occupation: "Entrepreneur",
-      testimonial: "Being self-employed, I was worried about my credit standing. NordFi gave me clarity on my financial position and actionable steps to improve. Perfect for entrepreneurs!",
+      testimonial: "Being self-employed, I was worried about my credit standing. NordFi's AI gave me clarity on my financial position with actionable steps to improve. Perfect for entrepreneurs!",
       rating: 5,
       initials: "ML"
     }
@@ -42,11 +42,11 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Trusted by Finnish Consumers
+            Trusted by Smart Consumers
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Join thousands of satisfied customers who have improved their financial understanding 
-            and achieved their goals with NordFi Scoring.
+            and achieved their goals with NordFi's AI-powered credit scoring.
           </p>
         </div>
 

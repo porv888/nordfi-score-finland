@@ -5,10 +5,10 @@ import heroImage from "@/assets/hero-image.jpg";
 
 const HeroSection = () => {
   const trustIndicators = [
-    { icon: MapPin, text: "Adapted for Finnish Market", color: "text-primary" },
+    { icon: MapPin, text: "Local Market Expertise", color: "text-primary" },
     { icon: Shield, text: "GDPR Compliant", color: "text-success" },
     { icon: Lock, text: "Bank-Grade Security", color: "text-warning" },
-    { icon: Users, text: "1000+ Finnish Customers", color: "text-info" },
+    { icon: Users, text: "1000+ Satisfied Customers", color: "text-info" },
   ];
 
   return (
@@ -27,7 +27,7 @@ const HeroSection = () => {
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
                 <Zap className="w-4 h-4" />
-                Finland's Modern Credit Platform
+                AI-Powered Credit Platform
               </div>
               
               <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-[1.1] tracking-tight">
@@ -37,13 +37,13 @@ const HeroSection = () => {
                 </span>
                 <br />
                 <span className="text-4xl lg:text-5xl font-normal text-muted-foreground">
-                  Built for Finland
+                  With AI Intelligence
                 </span>
               </h1>
               
               <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-xl text-balance">
-                Get your personalized credit assessment adapted for Finnish banking standards. 
-                Understand your creditworthiness and improve your financial health.
+                Get your personalized credit assessment powered by advanced AI. 
+                Understand your creditworthiness and improve your financial health with smart insights.
               </p>
             </div>
 
@@ -60,7 +60,7 @@ const HeroSection = () => {
             {/* Trust Indicators */}
             <div className="pt-6">
               <p className="text-sm font-semibold text-muted-foreground mb-6 uppercase tracking-wider">
-                Trusted by Finnish consumers
+                Trusted by customers worldwide
               </p>
               <div className="grid grid-cols-2 gap-6">
                 {trustIndicators.map((indicator, index) => (
@@ -84,7 +84,7 @@ const HeroSection = () => {
                 <div className="relative">
                   <img
                     src={heroImage}
-                    alt="Professional Finnish person reviewing credit dashboard"
+                    alt="Professional person reviewing credit dashboard"
                     className="w-full h-auto object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
