@@ -8,55 +8,65 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 215 25% 27%;
+    --background: 0 0% 99%;
+    --foreground: 240 10% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 27%;
+    --card-foreground: 240 10% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 27%;
+    --popover-foreground: 240 10% 9%;
 
-    /* Finnish fintech blue theme */
-    --primary: 215 100% 25%;
-    --primary-foreground: 0 0% 100%;
-    --primary-light: 215 100% 35%;
-    --primary-dark: 215 100% 15%;
+    /* Modern fintech gradient system */
+    --primary: 230 60% 15%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 230 70% 25%;
+    --primary-lighter: 230 80% 45%;
+    --primary-glow: 230 90% 65%;
 
-    --secondary: 215 16% 96%;
-    --secondary-foreground: 215 25% 27%;
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 240 10% 9%;
 
-    --muted: 215 16% 96%;
-    --muted-foreground: 215 13% 45%;
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 6% 50%;
 
-    --accent: 215 50% 92%;
-    --accent-foreground: 215 25% 27%;
+    --accent: 240 5% 94%;
+    --accent-foreground: 240 10% 9%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 215 20% 88%;
-    --input: 215 20% 88%;
-    --ring: 215 100% 25%;
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 230 60% 15%;
 
-    /* Fintech specific tokens */
-    --success: 142 76% 36%;
-    --success-foreground: 0 0% 100%;
-    --warning: 38 92% 50%;
-    --warning-foreground: 0 0% 100%;
-    --info: 215 100% 50%;
-    --info-foreground: 0 0% 100%;
+    /* Enhanced fintech colors */
+    --success: 142 70% 45%;
+    --success-light: 142 70% 55%;
+    --success-foreground: 0 0% 98%;
+    --warning: 38 95% 55%;
+    --warning-foreground: 0 0% 98%;
+    --info: 220 90% 55%;
+    --info-foreground: 0 0% 98%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%);
+    /* Modern gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 50%, hsl(var(--primary-lighter)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-glow)) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    --gradient-mesh: radial-gradient(ellipse at top, hsl(var(--primary) / 0.1) 0%, transparent 50%), 
+                     radial-gradient(ellipse at bottom right, hsl(var(--primary-glow) / 0.1) 0%, transparent 50%);
 
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(var(--primary) / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(var(--primary) / 0.1), 0 2px 4px -1px hsl(var(--primary) / 0.06);
-    --shadow-lg: 0 10px 15px -3px hsl(var(--primary) / 0.1), 0 4px 6px -2px hsl(var(--primary) / 0.05);
-    --shadow-xl: 0 20px 25px -5px hsl(var(--primary) / 0.1), 0 10px 10px -5px hsl(var(--primary) / 0.04);
+    /* Enhanced shadows with color */
+    --shadow-sm: 0 1px 3px 0 hsl(var(--primary) / 0.1), 0 1px 2px 0 hsl(var(--primary) / 0.06);
+    --shadow-md: 0 4px 25px -2px hsl(var(--primary) / 0.12), 0 8px 10px -6px hsl(var(--primary) / 0.1);
+    --shadow-lg: 0 20px 25px -5px hsl(var(--primary) / 0.15), 0 10px 10px -5px hsl(var(--primary) / 0.1);
+    --shadow-xl: 0 25px 50px -12px hsl(var(--primary) / 0.25);
+    --shadow-glow: 0 0 50px hsl(var(--primary-glow) / 0.3);
+
+    /* Modern spacing and sizing */
+    --radius: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
 
     --radius: 0.5rem;
 
@@ -122,6 +132,53 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter antialiased;
   }
+}
+
+@layer components {
+  /* Glass morphism effect */
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  /* Modern card with enhanced shadows */
+  .card-modern {
+    @apply bg-card rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-border/50;
+  }
+  
+  /* Floating animation */
+  .floating {
+    animation: floating 3s ease-in-out infinite;
+  }
+  
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary via-primary-light to-primary-glow bg-clip-text text-transparent;
+  }
+  
+  /* Modern button glow effect */
+  .btn-glow {
+    @apply relative overflow-hidden;
+  }
+  .btn-glow::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform translate-x-[-100%] transition-transform duration-700;
+  }
+  .btn-glow:hover::before {
+    @apply translate-x-[100%];
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes floating {
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  33% { transform: translate(15px, -15px) rotate(1deg); }
+  66% { transform: translate(-10px, 10px) rotate(-1deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
 }

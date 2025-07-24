@@ -1,60 +1,74 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Shield, Users, Lock, MapPin } from "lucide-react";
+import { Shield, Users, Lock, MapPin, ArrowRight, Zap } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 
 const HeroSection = () => {
   const trustIndicators = [
-    { icon: MapPin, text: "Adapted for Finnish Market" },
-    { icon: Shield, text: "GDPR Compliant" },
-    { icon: Lock, text: "Bank-Grade Security" },
-    { icon: Users, text: "1000+ Finnish Customers Served" },
+    { icon: MapPin, text: "Adapted for Finnish Market", color: "text-primary" },
+    { icon: Shield, text: "GDPR Compliant", color: "text-success" },
+    { icon: Lock, text: "Bank-Grade Security", color: "text-warning" },
+    { icon: Users, text: "1000+ Finnish Customers", color: "text-info" },
   ];
 
   return (
-    <section className="relative bg-gradient-to-br from-background via-secondary/20 to-accent/30 py-20 lg:py-32 overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent" />
+    <section className="relative min-h-[90vh] flex items-center bg-gradient-mesh overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary-glow/10 rounded-full blur-3xl animate-pulse delay-1000" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-gradient-to-r from-primary/5 to-transparent rounded-full blur-3xl" />
+      </div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
-          <div className="space-y-8">
-            <div className="space-y-6">
-              <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
+          <div className="space-y-10 animate-fade-in-up">
+            <div className="space-y-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                <Zap className="w-4 h-4" />
+                Finland's Modern Credit Platform
+              </div>
+              
+              <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-[1.1] tracking-tight">
                 Know Your{" "}
-                <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
+                <span className="gradient-text">
                   Credit Score
                 </span>
                 <br />
-                Built for Finland
+                <span className="text-4xl lg:text-5xl font-normal text-muted-foreground">
+                  Built for Finland
+                </span>
               </h1>
               
-              <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
+              <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-xl text-balance">
                 Get your personalized credit assessment adapted for Finnish banking standards. 
                 Understand your creditworthiness and improve your financial health.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-6">
+            <div className="flex flex-col sm:flex-row gap-6">
+              <Button variant="hero" size="lg" className="text-lg px-10 py-6 group">
                 Check Your Score Now
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="lg" className="px-8 py-6">
+              <Button variant="glass" size="lg" className="px-10 py-6">
                 View Sample Report
               </Button>
             </div>
 
             {/* Trust Indicators */}
-            <div className="pt-8">
-              <p className="text-sm font-medium text-muted-foreground mb-4">
+            <div className="pt-6">
+              <p className="text-sm font-semibold text-muted-foreground mb-6 uppercase tracking-wider">
                 Trusted by Finnish consumers
               </p>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-6">
                 {trustIndicators.map((indicator, index) => (
-                  <div key={index} className="flex items-center space-x-2">
-                    <indicator.icon className="w-4 h-4 text-primary" />
-                    <span className="text-sm text-muted-foreground">
+                  <div key={index} className="flex items-center space-x-3 group">
+                    <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-background to-secondary flex items-center justify-center shadow-md group-hover:shadow-lg transition-all">
+                      <indicator.icon className={`w-4 h-4 ${indicator.color}`} />
+                    </div>
+                    <span className="text-sm font-medium text-muted-foreground group-hover:text-foreground transition-colors">
                       {indicator.text}
                     </span>
                   </div>
@@ -64,27 +78,39 @@ const HeroSection = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="relative">
-            <Card className="overflow-hidden shadow-2xl transform rotate-1 hover:rotate-0 transition-transform duration-500">
-              <img
-                src={heroImage}
-                alt="Professional Finnish person reviewing credit dashboard"
-                className="w-full h-auto object-cover"
-              />
-            </Card>
+          <div className="relative lg:scale-110 animate-scale-in">
+            <div className="relative floating">
+              <Card className="overflow-hidden shadow-2xl border-0 bg-gradient-to-br from-background to-secondary/30 backdrop-blur-sm">
+                <div className="relative">
+                  <img
+                    src={heroImage}
+                    alt="Professional Finnish person reviewing credit dashboard"
+                    className="w-full h-auto object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                </div>
+              </Card>
+            </div>
             
-            {/* Floating Stats */}
-            <Card className="absolute -bottom-6 -left-6 p-4 shadow-lg bg-background/95 backdrop-blur-sm">
+            {/* Floating Stats - Enhanced */}
+            <Card className="absolute -bottom-8 -left-8 p-6 shadow-xl glass border-primary/20 backdrop-blur-xl animate-slide-up">
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">750+</div>
-                <div className="text-sm text-muted-foreground">Avg. Score</div>
+                <div className="text-3xl font-bold gradient-text mb-1">750+</div>
+                <div className="text-sm text-muted-foreground font-medium">Average Score</div>
               </div>
             </Card>
             
-            <Card className="absolute -top-6 -right-6 p-4 shadow-lg bg-background/95 backdrop-blur-sm">
+            <Card className="absolute -top-8 -right-8 p-6 shadow-xl glass border-success/20 backdrop-blur-xl animate-slide-up delay-200">
               <div className="text-center">
-                <div className="text-2xl font-bold text-success">98%</div>
-                <div className="text-sm text-muted-foreground">Accuracy</div>
+                <div className="text-3xl font-bold text-success mb-1">98%</div>
+                <div className="text-sm text-muted-foreground font-medium">Accuracy Rate</div>
+              </div>
+            </Card>
+
+            <Card className="absolute top-1/2 -left-4 p-4 shadow-xl glass border-warning/20 backdrop-blur-xl animate-slide-up delay-500">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-warning mb-1">10min</div>
+                <div className="text-xs text-muted-foreground font-medium">Assessment</div>
               </div>
             </Card>
           </div>

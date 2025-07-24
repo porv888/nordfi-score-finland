@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X, Shield, TrendingUp } from "lucide-react";
+import { Menu, X, Shield, TrendingUp, Sparkles } from "lucide-react";
 import { useState } from "react";
 
 const Header = () => {
@@ -14,38 +14,46 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+    <header className="bg-background/80 backdrop-blur-xl border-b border-border/50 sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center">
-              <TrendingUp className="w-5 h-5 text-primary-foreground" />
+          <div className="flex items-center space-x-3">
+            <div className="relative">
+              <div className="w-10 h-10 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-lg">
+                <TrendingUp className="w-6 h-6 text-primary-foreground" />
+              </div>
+              <Sparkles className="absolute -top-1 -right-1 w-4 h-4 text-primary-glow animate-pulse" />
             </div>
-            <span className="text-xl font-bold text-foreground">NordFi</span>
-            <span className="text-sm text-muted-foreground hidden sm:inline">Scoring</span>
+            <div className="flex flex-col">
+              <span className="text-2xl font-bold gradient-text">NordFi</span>
+              <span className="text-xs text-muted-foreground font-medium -mt-1">SCORING</span>
+            </div>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-10">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium"
+                className="relative text-muted-foreground hover:text-primary transition-all duration-300 text-sm font-medium group"
               >
                 {item.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-primary-glow transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center space-x-3">
-            <div className="flex items-center space-x-1 text-xs text-muted-foreground">
-              <Shield className="w-3 h-3" />
-              <span>GDPR</span>
+          <div className="hidden md:flex items-center space-x-4">
+            <div className="glass px-3 py-1.5 rounded-lg">
+              <div className="flex items-center space-x-2 text-xs font-medium">
+                <Shield className="w-3 h-3 text-primary" />
+                <span className="text-primary">GDPR</span>
+              </div>
             </div>
-            <Button variant="cta" size="sm">
+            <Button variant="cta" size="lg" className="px-6">
               Check Your Score
             </Button>
           </div>
