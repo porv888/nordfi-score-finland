@@ -108,7 +108,7 @@ const ContactSection = () => {
                 />
               </div>
               
-              <Button variant="cta" className="w-full">
+              <Button variant="default" className="w-full">
                 Send Message
               </Button>
             </form>

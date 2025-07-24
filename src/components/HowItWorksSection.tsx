@@ -119,7 +119,7 @@ const HowItWorksSection = () => {
             </p>
             
             <div className="space-y-3">
-              <Button variant="cta" className="w-full">
+              <Button variant="default" className="w-full">
                 Start Free Assessment
               </Button>
               <Button variant="outline" className="w-full">

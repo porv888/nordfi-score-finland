@@ -61,14 +61,11 @@ const BenefitsSection = () => {
           {benefits.map((benefit, index) => (
             <Card 
               key={index} 
-              className="group p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-gradient-to-br from-background to-secondary/30 border-0 shadow-lg relative overflow-hidden"
+              className="card-dashboard group p-8 hover:shadow-2xl transition-all duration-300"
             >
-              {/* Hover glow effect */}
-              <div className={`absolute inset-0 bg-gradient-to-r ${benefit.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
-              
-              <div className="relative space-y-6">
-                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${benefit.gradient} flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}>
-                  <benefit.icon className={`w-8 h-8 text-${benefit.color}`} />
+              <div className="space-y-6">
+                <div className={`w-16 h-16 rounded-lg bg-${benefit.color} flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300`}>
+                  <benefit.icon className="w-8 h-8 text-white" />
                 </div>
                 
                 <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">

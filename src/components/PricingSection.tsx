@@ -37,7 +37,7 @@ const PricingSection = () => {
         "PDF report download"
       ],
       buttonText: "Get Premium Report",
-      buttonVariant: "cta" as const,
+      buttonVariant: "default" as const,
       popular: true
     },
     {

@@ -52,7 +52,7 @@ const HeroSection = () => {
                 Check Your Score Now
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="glass" size="lg" className="px-10 py-6">
+              <Button variant="outline" size="lg" className="px-10 py-6 border-primary text-primary hover:bg-primary hover:text-white">
                 View Sample Report
               </Button>
             </div>
@@ -80,7 +80,7 @@ const HeroSection = () => {
           {/* Hero Image */}
           <div className="relative lg:scale-110 animate-scale-in">
             <div className="relative floating">
-              <Card className="overflow-hidden shadow-2xl border-0 bg-gradient-to-br from-background to-secondary/30 backdrop-blur-sm">
+              <Card className="card-dashboard overflow-hidden shadow-2xl">
                 <div className="relative">
                   <img
                     src={heroImage}
@@ -92,22 +92,22 @@ const HeroSection = () => {
               </Card>
             </div>
             
-            {/* Floating Stats - Enhanced */}
-            <Card className="absolute -bottom-8 -left-8 p-6 shadow-xl glass border-primary/20 backdrop-blur-xl animate-slide-up">
+            {/* Floating Stats - Dashboard Style */}
+            <Card className="absolute -bottom-8 -left-8 p-6 card-dashboard animate-slide-up">
               <div className="text-center">
-                <div className="text-3xl font-bold gradient-text mb-1">750+</div>
+                <div className="text-3xl font-bold text-primary mb-1">750+</div>
                 <div className="text-sm text-muted-foreground font-medium">Average Score</div>
               </div>
             </Card>
             
-            <Card className="absolute -top-8 -right-8 p-6 shadow-xl glass border-success/20 backdrop-blur-xl animate-slide-up delay-200">
+            <Card className="absolute -top-8 -right-8 p-6 card-dashboard animate-slide-up delay-200">
               <div className="text-center">
                 <div className="text-3xl font-bold text-success mb-1">98%</div>
                 <div className="text-sm text-muted-foreground font-medium">Accuracy Rate</div>
               </div>
             </Card>
 
-            <Card className="absolute top-1/2 -left-4 p-4 shadow-xl glass border-warning/20 backdrop-blur-xl animate-slide-up delay-500">
+            <Card className="absolute top-1/2 -left-4 p-4 card-dashboard animate-slide-up delay-500">
               <div className="text-center">
                 <div className="text-2xl font-bold text-warning mb-1">10min</div>
                 <div className="text-xs text-muted-foreground font-medium">Assessment</div>
