@@ -6,56 +6,56 @@ import { CheckCircle, Star } from "lucide-react";
 const PricingSection = () => {
   const plans = [
     {
-      name: "Free Assessment",
+      name: "Ilmainen Arviointi",
       price: "€0",
-      period: "one-time",
-      description: "Perfect for getting started with your credit journey",
+      period: "kertamaksu",
+      description: "Täydellinen taloudellisen matkan aloittamiseen",
       features: [
-        "Basic credit score",
-        "Score overview",
-        "Finnish market comparison",
-        "Basic recommendations",
-        "GDPR compliant"
+        "Perustasn talousluokitus",
+        "Luokituksen yleiskatsaus",
+        "Suomen markkinavertailu",
+        "Perussuositukset",
+        "GDPR-yhteensopiva"
       ],
-      buttonText: "Get Free Score",
+      buttonText: "Hanki Ilmainen Luokitus",
       buttonVariant: "outline" as const,
       popular: false
     },
     {
-      name: "Premium Report",
+      name: "Premium-Raportti",
       price: "€9.99",
-      period: "one-time",
-      description: "Comprehensive analysis with detailed improvement plan",
+      period: "kertamaksu",
+      description: "Kattava analyysi yksityiskohtaisella parannussuunnitelmalla",
       features: [
-        "Detailed credit analysis",
-        "50+ factor assessment",
-        "Personalized improvement plan",
-        "Finnish bank compatibility",
-        "Asset evaluation",
-        "Risk factor identification",
-        "Loan readiness score",
-        "PDF report download"
+        "Yksityiskohtainen talousanalyysi",
+        "50+ tekijän arviointi",
+        "Henkilökohtainen parannussuunnitelma",
+        "Suomalaisten pankkien yhteensopivuus",
+        "Omaisuuden arviointi",
+        "Riskitekijöiden tunnistaminen",
+        "Lainakelpoisuuspisteytys",
+        "PDF-raportin lataus"
       ],
-      buttonText: "Get Premium Report",
+      buttonText: "Hanki Premium-Raportti",
       buttonVariant: "default" as const,
       popular: true
     },
     {
-      name: "Monitoring Service",
+      name: "Seurantapalvelu",
       price: "€4.99",
-      period: "per month",
-      description: "Ongoing credit monitoring and alerts",
+      period: "per kuukausi",
+      description: "Jatkuva talousluokituksen seuranta ja hälytykset",
       features: [
-        "Monthly score updates",
-        "Change notifications",
-        "Historical tracking",
-        "Improvement progress",
-        "Market trends",
-        "New opportunities alerts",
-        "Priority email support",
-        "Cancel anytime"
+        "Kuukausittaiset pisteytykset",
+        "Muutosilmoitukset",
+        "Historiallinen seuranta",
+        "Parannusten edistyminen",
+        "Markkinatrendit",
+        "Uusien mahdollisuuksien hälytykset",
+        "Prioriteettisähköpostituki",
+        "Peruuta milloin tahansa"
       ],
-      buttonText: "Start Monitoring",
+      buttonText: "Aloita Seuranta",
       buttonVariant: "outline" as const,
       popular: false
     }
@@ -66,11 +66,11 @@ const PricingSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Choose Your Plan
+            Valitse Suunnitelmasi
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Start with our free assessment and upgrade when you need more detailed insights. 
-            All plans are designed specifically for Finnish consumers.
+            Aloita ilmaisella arvioinnillamme ja päivitä kun tarvitset yksityiskohtaisempia näkemyksiä. 
+            Kaikki suunnitelmat on suunniteltu erityisesti suomalaisille kuluttajille.
           </p>
         </div>
 
@@ -87,7 +87,7 @@ const PricingSection = () => {
               {plan.popular && (
                 <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground">
                   <Star className="w-3 h-3 mr-1" />
-                  Most Popular
+                  Suosituin
                 </Badge>
               )}
               
@@ -128,8 +128,8 @@ const PricingSection = () => {
                 <CheckCircle className="w-5 h-5 text-success" />
               </div>
               <div>
-                <div className="font-semibold text-foreground">30-Day Money Back Guarantee</div>
-                <div className="text-sm text-muted-foreground">Not satisfied? Get a full refund, no questions asked.</div>
+                <div className="font-semibold text-foreground">30 Päivän Rahat Takaisin -Takuu</div>
+                <div className="text-sm text-muted-foreground">Etkö ole tyytyväinen? Saat täyden hyvityksen, ei kysymyksiä.</div>
               </div>
             </div>
           </Card>

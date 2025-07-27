@@ -8,33 +8,33 @@ const TestimonialsSection = () => {
       name: "Jukka Virtanen",
       location: "Helsinki",
       occupation: "Software Engineer",
-      testimonial: "NordFi's AI analysis helped me understand my credit before applying for a mortgage. The personalized insights and recommendations were exactly what I needed. Got approved with a great rate!",
+      testimonial: "NordFin PSD2-analyysi auttoi minua ymmärtämään taloudellista tilannettani ennen asuntolainahakemusta. Henkilökohtaiset näkemykset ja suositukset olivat juuri sitä mitä tarvitsin. Sain hyväksynnän loistavalla korolla!",
       rating: 5,
       initials: "JV"
     },
     {
       name: "Aino Koskinen",
       location: "Tampere", 
-      occupation: "Marketing Manager",
-      testimonial: "The AI-powered credit analysis is incredibly detailed and easy to understand. NordFi made it crystal clear what I needed to improve and helped me build a stronger credit profile.",
+      occupation: "Markkinointipäällikkö",
+      testimonial: "PSD2-pohjainen talousanalyysi on uskomattoman yksityiskohtainen ja helppo ymmärtää. NordFi teki kristallinselväksi mitä minun piti parantaa ja auttoi rakentamaan vahvemman taloudellisen profiilin.",
       rating: 5,
       initials: "AK"
     },
     {
       name: "Mikael Laaksonen",
       location: "Turku",
-      occupation: "Entrepreneur",
-      testimonial: "Being self-employed, I was worried about my credit standing. NordFi's AI gave me clarity on my financial position with actionable steps to improve. Perfect for entrepreneurs!",
+      occupation: "Yrittäjä",
+      testimonial: "Yrittäjänä olin huolissani taloudellisesta asemastani. NordFin PSD2-analyysi antoi minulle selkeyttä taloudelliseen tilanteeseeni konkreettisilla parannusehdotuksilla. Täydellinen yrittäjille!",
       rating: 5,
       initials: "ML"
     }
   ];
 
   const stats = [
-    { value: "1,000+", label: "Happy Customers" },
-    { value: "4.9/5", label: "Average Rating" },
-    { value: "750+", label: "Average Score Improvement" },
-    { value: "98%", label: "Would Recommend" }
+    { value: "1,000+", label: "Tyytyväistä Asiakasta" },
+    { value: "4.9/5", label: "Keskiarvoarvosana" },
+    { value: "750+", label: "Keskimääräinen Pisteparannus" },
+    { value: "98%", label: "Suosittelisi Eteenpäin" }
   ];
 
   return (
@@ -42,11 +42,11 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Trusted by Smart Consumers
+            Älykkäiden Kuluttajien Luottamus
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Join thousands of satisfied customers who have improved their financial understanding 
-            and achieved their goals with NordFi's AI-powered credit scoring.
+            Liity tuhansien tyytyväisten asiakkaiden joukkoon, jotka ovat parantaneet taloudellista ymmärrystään 
+            ja saavuttaneet tavoitteensa NordFin PSD2-pohjaisella talousluokituksella.
           </p>
         </div>
 

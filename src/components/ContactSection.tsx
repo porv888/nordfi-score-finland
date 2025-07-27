@@ -8,43 +8,43 @@ const ContactSection = () => {
   const contactMethods = [
     {
       icon: Mail,
-      title: "Email Support",
-      description: "Get help from our Finnish customer success team",
+      title: "Sähköpostituki",
+      description: "Saa apua suomalaiselta asiakasmenestystiimiltämme",
       contact: "support@nordfi.fi",
-      responseTime: "Within 24 hours"
+      responseTime: "24 tunnin sisällä"
     },
     {
       icon: MessageCircle,
       title: "Live Chat",
-      description: "Chat with us in Finnish or English",
-      contact: "Available 9-17 EET",
-      responseTime: "Instant response"
+      description: "Keskustele kanssamme suomeksi tai englanniksi",
+      contact: "Saatavilla 9-17 EET",
+      responseTime: "Välitön vastaus"
     },
     {
       icon: HelpCircle,
-      title: "FAQ",
-      description: "Find answers to common questions",
-      contact: "50+ Articles",
-      responseTime: "Immediate"
+      title: "UKK",
+      description: "Löydä vastauksia yleisiin kysymyksiin",
+      contact: "50+ Artikkelia",
+      responseTime: "Välitön"
     }
   ];
 
   const faqs = [
     {
-      question: "How is NordFi different from international credit services?",
-      answer: "NordFi is built specifically for the Finnish market, understanding local banks, employment types, and regulations."
+      question: "Miten NordFi eroaa kansainvälisistä talouspalveluista?",
+      answer: "NordFi on rakennettu erityisesti Suomen markkinoille, ymmärtäen paikalliset pankit, työllisyystyypit ja säädökset."
     },
     {
-      question: "Is my data safe and GDPR compliant?",
-      answer: "Yes, we follow strict GDPR guidelines and use bank-grade security to protect your information."
+      question: "Ovatko tietoni turvassa ja GDPR-yhteensopivia?",
+      answer: "Kyllä, noudatamme tiukkoja GDPR-ohjeita ja käytämme pankkitason turvallisuutta tietojesi suojaamiseen."
     },
     {
-      question: "Which Finnish banks do you work with?",
-      answer: "We have integrations with Nordea, OP-ryhmä, Danske Bank, Handelsbanken, and other major Finnish financial institutions."
+      question: "Minkä suomalaisten pankkien kanssa teette yhteistyötä?",
+      answer: "Meillä on integraatiot Nordean, OP-ryhmän, Danske Bankin, Handelsbankenin ja muiden suurten suomalaisten rahoituslaitosten kanssa."
     },
     {
-      question: "How long does the assessment take?",
-      answer: "Our comprehensive assessment takes about 10 minutes to complete, and you get your results instantly."
+      question: "Kuinka kauan arviointi kestää?",
+      answer: "Kattava arviointimme kestää noin 10 minuuttia, ja saat tuloksesi välittömästi."
     }
   ];
 
@@ -53,11 +53,11 @@ const ContactSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Get in Touch
+            Ota Yhteyttä
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Have questions about your credit score or need help with our platform? 
-            Our Finnish customer success team is here to help.
+            Onko sinulla kysymyksiä talousluokituksestasi tai tarvitsetko apua alustamme kanssa? 
+            Suomalainen asiakasmenestystiimimme on täällä auttamassa.
           </p>
         </div>
 
@@ -65,20 +65,20 @@ const ContactSection = () => {
           {/* Contact Form */}
           <Card className="p-8">
             <h3 className="text-xl font-semibold text-foreground mb-6">
-              Send us a Message
+              Lähetä Meille Viesti
             </h3>
             
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
-                    First Name
+                    Etunimi
                   </label>
                   <Input placeholder="Jukka" />
                 </div>
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
-                    Last Name
+                    Sukunimi
                   </label>
                   <Input placeholder="Virtanen" />
                 </div>
@@ -86,30 +86,30 @@ const ContactSection = () => {
               
               <div>
                 <label className="text-sm font-medium text-foreground mb-2 block">
-                  Email
+                  Sähköposti
                 </label>
                 <Input type="email" placeholder="jukka@example.fi" />
               </div>
               
               <div>
                 <label className="text-sm font-medium text-foreground mb-2 block">
-                  Subject
+                  Aihe
                 </label>
-                <Input placeholder="Question about my credit score" />
+                <Input placeholder="Kysymys talousluokituksestani" />
               </div>
               
               <div>
                 <label className="text-sm font-medium text-foreground mb-2 block">
-                  Message
+                  Viesti
                 </label>
                 <Textarea 
-                  placeholder="How can we help you with your credit journey?"
+                  placeholder="Miten voimme auttaa taloudellisessa matkassasi?"
                   rows={4}
                 />
               </div>
               
               <Button variant="default" className="w-full">
-                Send Message
+                Lähetä Viesti
               </Button>
             </form>
           </Card>
@@ -117,7 +117,7 @@ const ContactSection = () => {
           {/* Contact Methods */}
           <div className="space-y-6">
             <h3 className="text-xl font-semibold text-foreground mb-6">
-              Other Ways to Reach Us
+              Muut Tavat Tavoittaa Meidät
             </h3>
             
             {contactMethods.map((method, index) => (
@@ -141,10 +141,10 @@ const ContactSection = () => {
               <div className="flex items-start space-x-3">
                 <Shield className="w-5 h-5 text-success flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">Privacy Protected</h4>
+                  <h4 className="font-semibold text-foreground mb-1">Yksityisyys Suojattu</h4>
                   <p className="text-sm text-muted-foreground">
-                    All communications are encrypted and GDPR compliant. We never share 
-                    your personal information with third parties.
+                    Kaikki viestintä on salattua ja GDPR-yhteensopivaa. Emme koskaan jaa 
+                    henkilökohtaisia tietojasi kolmansille osapuolille.
                   </p>
                 </div>
               </div>
@@ -155,7 +155,7 @@ const ContactSection = () => {
         {/* FAQ Section */}
         <div>
           <h3 className="text-2xl font-bold text-foreground text-center mb-8">
-            Frequently Asked Questions
+            Usein Kysytyt Kysymykset
           </h3>
           
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">

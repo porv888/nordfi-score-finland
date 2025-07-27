@@ -3,48 +3,48 @@ import { TrendingUp, Mail, MapPin, Shield } from "lucide-react";
 const Footer = () => {
   const footerSections = [
     {
-      title: "Product",
+      title: "Tuote",
       links: [
-        { name: "How It Works", href: "#how-it-works" },
-        { name: "Features", href: "#features" },
-        { name: "Pricing", href: "#pricing" },
-        { name: "Sample Report", href: "#sample" }
+        { name: "Miten Se Toimii", href: "#how-it-works" },
+        { name: "Ominaisuudet", href: "#features" },
+        { name: "Hinnoittelu", href: "#pricing" },
+        { name: "Esimerkkiraportti", href: "#sample" }
       ]
     },
     {
-      title: "Company",
+      title: "Yritys",
       links: [
-        { name: "About Us", href: "#about" },
-        { name: "Contact", href: "#contact" },
-        { name: "Careers", href: "#careers" },
-        { name: "Blog", href: "#blog" }
+        { name: "Tietoa Meistä", href: "#about" },
+        { name: "Yhteystiedot", href: "#contact" },
+        { name: "Ura", href: "#careers" },
+        { name: "Blogi", href: "#blog" }
       ]
     },
     {
-      title: "Support",
+      title: "Tuki",
       links: [
-        { name: "Help Center", href: "#help" },
-        { name: "FAQ", href: "#faq" },
-        { name: "Contact Support", href: "#contact" },
-        { name: "System Status", href: "#status" }
+        { name: "Tukikeskus", href: "#help" },
+        { name: "UKK", href: "#faq" },
+        { name: "Ota Yhteyttä", href: "#contact" },
+        { name: "Järjestelmän Tila", href: "#status" }
       ]
     },
     {
-      title: "Legal",
+      title: "Juridiikka",
       links: [
-        { name: "Privacy Policy", href: "#privacy" },
-        { name: "Terms of Service", href: "#terms" },
-        { name: "GDPR Compliance", href: "#gdpr" },
-        { name: "Cookie Policy", href: "#cookies" }
+        { name: "Tietosuojakäytäntö", href: "#privacy" },
+        { name: "Käyttöehdot", href: "#terms" },
+        { name: "GDPR-Yhteensopivuus", href: "#gdpr" },
+        { name: "Evästekäytäntö", href: "#cookies" }
       ]
     }
   ];
 
   const compliance = [
-    "GDPR Compliant",
-    "ISO 27001 Certified", 
-    "Finnish Financial Regulations",
-    "Bank-Grade Security"
+    "GDPR-Yhteensopiva",
+    "ISO 27001 Sertifioitu", 
+    "Suomen Rahoitussäädökset",
+    "Pankkitason Turvallisuus"
   ];
 
   return (
@@ -60,14 +60,14 @@ const Footer = () => {
               <span className="text-xl font-bold">NordFi</span>
             </div>
             <p className="text-primary-foreground/80 text-sm mb-6">
-              Democratizing credit information for Finnish consumers with comprehensive, 
-              secure, and locally-adapted credit scoring.
+              Taloustietojen demokratisointi suomalaisille kuluttajille kattavalla, 
+              turvallisella ja paikallisesti sovitetulla talousluokituksella.
             </p>
             
             <div className="space-y-3">
               <div className="flex items-center space-x-2 text-sm">
                 <MapPin className="w-4 h-4" />
-                <span>Helsinki, Finland</span>
+                <span>Helsinki, Suomi</span>
               </div>
               <div className="flex items-center space-x-2 text-sm">
                 <Mail className="w-4 h-4" />
@@ -100,7 +100,7 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 mt-12 pt-8">
           <div className="flex items-center justify-center mb-6">
             <Shield className="w-5 h-5 mr-2" />
-            <span className="font-medium">Secure & Compliant</span>
+            <span className="font-medium">Turvallinen ja Yhteensopiva</span>
           </div>
           
           <div className="grid md:grid-cols-4 gap-4 text-center mb-8">
@@ -116,13 +116,13 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-primary-foreground/80">
-              © 2024 NordFi Scoring Platform. All rights reserved.
+              © 2024 NordFi Luokitusalusta. Kaikki oikeudet pidätetään.
             </div>
             
             <div className="flex space-x-6 text-sm text-primary-foreground/80">
-              <span>Made with ❤️ in Finland</span>
+              <span>Tehty ❤️:lla Suomessa</span>
               <span>•</span>
-              <span>Finnish Banking Specialists</span>
+              <span>Suomalaisen Pankkitoiminnan Asiantuntijat</span>
             </div>
           </div>
         </div>

@@ -17,56 +17,56 @@ const FeaturesSection = () => {
   const aiFeatures = [
     {
       icon: Brain,
-      title: "AI-Powered Analysis",
-      description: "Advanced machine learning algorithms analyze your financial profile"
+      title: "PSD2-Pohjainen Analyysi",
+      description: "Edistyneet algoritmit analysoivat taloudellista profiiliasi avoimen pankkitoiminnan avulla"
     },
     {
       icon: Zap,
-      title: "Instant Processing",
-      description: "Get your credit score and insights in real-time with our AI engine"
+      title: "Välitön Käsittely",
+      description: "Saa talousluokituksesi ja näkemyksesi reaaliajassa PSD2-alustamme kautta"
     },
     {
       icon: TrendingUp,
-      title: "Credit Health Monitoring",
-      description: "Track your credit health over time with continuous monitoring and insights"
+      title: "Taloudellisen Terveyen Seuranta",
+      description: "Seuraa taloudellista terveyttäsi ajan myötä jatkuvalla seurannalla ja näkemyksillä"
     },
     {
       icon: Shield,
-      title: "Secure & Private",
-      description: "Bank-grade security with full GDPR compliance and data protection"
+      title: "Turvallinen ja Yksityinen",
+      description: "Pankkitason turvallisuus täydellä GDPR-yhteensopivuudella ja tietosuojalla"
     }
   ];
 
   const analysisFeatures = [
     {
       icon: TrendingUp,
-      title: "Income Stability Assessment",
-      description: "AI evaluates employment history and income consistency over time"
+      title: "Tulojen Vakausarviointi",
+      description: "PSD2-analyysi arvioi työsuhteen historiaa ja tulojen johdonmukaisuutta ajan myötä"
     },
     {
       icon: BarChart3,
-      title: "Debt-to-Income Analysis", 
-      description: "Smart analysis of your debt obligations versus income patterns"
+      title: "Velka-tulosuhdeanalyysi", 
+      description: "Älykäs analyysi velkasitoumuksistasi suhteessa tulomalleihin"
     },
     {
       icon: Target,
-      title: "Asset Evaluation",
-      description: "Comprehensive assessment of savings, investments, and property"
+      title: "Omaisuuden Arviointi",
+      description: "Kattava arviointi säästöistä, investoinneista ja omaisuudesta"
     },
     {
       icon: CheckCircle,
-      title: "Risk Factor Identification",
-      description: "AI identifies potential red flags and improvement opportunities"
+      title: "Riskitekijöiden Tunnistaminen",
+      description: "PSD2-analyysi tunnistaa mahdolliset varoitusmerkit ja parannusmahdollisuudet"
     }
   ];
 
   const dashboardFeatures = [
-    "Real-time credit score updates",
-    "AI-generated improvement recommendations", 
-    "Historical tracking and trends",
-    "Personalized action items",
-    "Bank compatibility scoring",
-    "Loan readiness assessment"
+    "Reaaliaikaiset talousluokituspäivitykset",
+    "PSD2-pohjaiset parannussuositukset", 
+    "Historiallinen seuranta ja trendit",
+    "Henkilökohtaiset toimintakohdat",
+    "Pankkien yhteensopivuuspisteytys",
+    "Lainakelpoisuuden arviointi"
   ];
 
   return (
@@ -81,15 +81,15 @@ const FeaturesSection = () => {
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
             <Sparkles className="w-4 h-4" />
-            AI-Powered Features
+            PSD2-Pohjaiset Ominaisuudet
           </div>
           <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 tracking-tight">
-            Smart Credit{" "}
-            <span className="gradient-text">Intelligence</span>
+            Älykäs Talous{" "}
+            <span className="gradient-text">Analyysi</span>
           </h2>
           <p className="text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto text-balance leading-relaxed">
-            Experience the future of credit scoring with advanced AI that understands your unique 
-            financial profile and provides personalized insights for better financial decisions.
+            Koe talousluokituksen tulevaisuus edistyneellä PSD2-teknologialla, joka ymmärtää ainutlaatuisen 
+            taloudellisen profiilisi ja tarjoaa henkilökohtaisia näkemyksiä parempien taloudellisten päätösten tekemiseen.
           </p>
         </div>
 
@@ -98,7 +98,7 @@ const FeaturesSection = () => {
           <div className="flex items-center justify-center mb-12">
             <Badge variant="outline" className="text-primary border-primary px-6 py-3 text-base">
               <Brain className="w-5 h-5 mr-2" />
-              Artificial Intelligence
+              PSD2-Teknologia
             </Badge>
           </div>
           
@@ -123,7 +123,7 @@ const FeaturesSection = () => {
           <div className="flex items-center justify-center mb-12">
             <Badge variant="outline" className="text-success border-success px-6 py-3 text-base">
               <BarChart3 className="w-5 h-5 mr-2" />
-              Smart Analysis
+              Älykäs Analyysi
             </Badge>
           </div>
           
@@ -149,17 +149,17 @@ const FeaturesSection = () => {
             <div className="flex items-center mb-6">
               <Badge variant="outline" className="text-info border-info px-6 py-3 text-base">
                 <Clock className="w-5 h-5 mr-2" />
-                Smart Dashboard
+                Älykäs Hallintapaneeli
               </Badge>
             </div>
             
             <h3 className="text-3xl font-bold text-foreground">
-              Everything You Need in One Place
+              Kaikki Mitä Tarvitset Yhdessä Paikassa
             </h3>
             
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Our AI-powered dashboard gives you complete visibility into your credit health 
-              with intelligent insights and personalized recommendations.
+              PSD2-pohjainen hallintapaneelimme antaa sinulle täydellisen näkyvyyden taloudelliseen terveyteesi 
+              älykkäillä näkemyksillä ja henkilökohtaisilla suosituksilla.
             </p>
             
             <div className="space-y-4">
@@ -178,7 +178,7 @@ const FeaturesSection = () => {
             <div className="space-y-8">
               <div className="text-center">
                 <div className="text-5xl font-bold gradient-text mb-3">750</div>
-                <div className="text-muted-foreground font-medium">Your Credit Score</div>
+                <div className="text-muted-foreground font-medium">Sinun Talousluokituksesi</div>
                 <div className="w-full bg-secondary rounded-full h-3 mt-4">
                   <div className="bg-gradient-to-r from-success to-primary h-3 rounded-full shadow-lg" style={{width: '75%'}}></div>
                 </div>
@@ -186,18 +186,18 @@ const FeaturesSection = () => {
               
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center p-4 bg-background/60 rounded-xl border border-success/20">
-                  <div className="text-xl font-bold text-success mb-1">Excellent</div>
-                  <div className="text-sm text-muted-foreground">Payment History</div>
+                  <div className="text-xl font-bold text-success mb-1">Erinomainen</div>
+                  <div className="text-sm text-muted-foreground">Maksuhistoria</div>
                 </div>
                 <div className="text-center p-4 bg-background/60 rounded-xl border border-primary/20">
-                  <div className="text-xl font-bold text-primary mb-1">Good</div>
-                  <div className="text-sm text-muted-foreground">Credit Utilization</div>
+                  <div className="text-xl font-bold text-primary mb-1">Hyvä</div>
+                  <div className="text-sm text-muted-foreground">Luoton Käyttöaste</div>
                 </div>
               </div>
               
               <div className="text-center p-4 bg-gradient-to-r from-primary/10 to-primary-glow/10 rounded-xl">
                 <p className="text-sm font-medium text-foreground">
-                  🎉 Ready for premium loan applications
+                  🎉 Valmis premium-lainahakemuksiin
                 </p>
               </div>
             </div>
