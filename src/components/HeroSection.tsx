@@ -31,29 +31,29 @@ const HeroSection = () => {
               </div>
               
               <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-[1.1] tracking-tight">
-                Henkilökohtainen{" "}
+                Saa Henkilökohtainen{" "}
                 <span className="gradient-text">
-                  Talousluokitus
+                  Talousluokituksesi
                 </span>
                 <br />
-                <span className="text-4xl lg:text-5xl font-normal text-muted-foreground">
-                  Avoimella Pankkitoiminnalla
+                <span className="text-3xl lg:text-4xl font-normal text-muted-foreground">
+                  10 Minuutissa
                 </span>
               </h1>
               
               <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-xl text-balance">
-                Saa henkilökohtainen talousluokitus kulutustottumuksistasi. Tarkastele tulokset 
-                hallintapaneelissa tai lataa PDF. Kuukausittaiset talousneuvoat juuri sinulle.
+                PSD2-pohjainen analyysi kulutustottumuksistasi. Kuukausittaiset talousneuvoat. 
+                Lataa PDF tai käytä hallintapaneelia.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6">
-              <Button variant="hero" size="lg" className="text-lg px-10 py-6 group">
-                Tarkista Luokituksesi
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <Button variant="hero" size="lg" className="text-xl px-16 py-8 group">
+                ALOITA NYT - ILMAINEN
+                <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="lg" className="px-10 py-6 border-primary text-primary hover:bg-primary hover:text-white">
-                Näytä Esimerkkiraportti
+              <Button variant="outline" size="lg" className="px-12 py-8 text-lg border-primary text-primary hover:bg-primary hover:text-white">
+                Katso Esimerkki
               </Button>
             </div>
 

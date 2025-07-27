@@ -5,31 +5,24 @@ const BenefitsSection = () => {
   const benefits = [
     {
       icon: TrendingUp,
-      title: "Henkilökohtainen Talousluokitus",
-      description: "Saa kattava näkemys taloudellisesta tilanteestasi PSD2-pohjaisella analyysillä kulutustottumuksistasi.",
+      title: "10 Min Analyysi",
+      description: "Saa kattava talousluokitus 10 minuutissa PSD2-teknologialla.",
       color: "primary",
       gradient: "from-primary/10 to-primary/20",
     },
     {
-      icon: Lightbulb,
-      title: "Kuukausittaiset Talousneuvoat", 
-      description: "Saa henkilökohtaiset talousneuvoat kuukausittain kulutustottumustesi perusteella parempia taloudellisia päätöksiä varten.",
-      color: "warning",
-      gradient: "from-warning/10 to-warning/20",
-    },
-    {
       icon: CreditCard,
-      title: "Hallintapaneeli ja PDF-Raportti",
-      description: "Tarkastele tuloksiasi verkossa hallintapaneelissa tai lataa yksityiskohtainen PDF-raportti.",
+      title: "PDF + Hallintapaneeli", 
+      description: "Lataa raportti PDF:nä tai käytä verkossa olevaa hallintapaneelia.",
       color: "success",
       gradient: "from-success/10 to-success/20",
     },
     {
-      icon: BarChart3,
-      title: "Avoin Pankkitoiminta",
-      description: "Turvallinen PSD2-yhteensopiva analyysi, joka käyttää avoimia pankkitietoja tarkkojen tulosten saamiseksi.",
-      color: "info",
-      gradient: "from-info/10 to-info/20",
+      icon: Lightbulb,
+      title: "Kuukausittaiset Neuvoat",
+      description: "Saa henkilökohtaiset talousneuvoat perustuen kulutustottumuksiisi.",
+      color: "warning",
+      gradient: "from-warning/10 to-warning/20",
     },
   ];
 
@@ -57,22 +50,22 @@ const BenefitsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mb-20">
+        <div className="grid md:grid-cols-3 gap-8 mb-20">
           {benefits.map((benefit, index) => (
             <Card 
               key={index} 
-              className="card-dashboard group p-8 hover:shadow-2xl transition-all duration-300"
+              className="card-dashboard group p-8 hover:shadow-2xl transition-all duration-300 text-center"
             >
               <div className="space-y-6">
-                <div className={`w-16 h-16 rounded-lg bg-${benefit.color} flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300`}>
-                  <benefit.icon className="w-8 h-8 text-white" />
+                <div className={`w-20 h-20 rounded-lg bg-${benefit.color} flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 mx-auto`}>
+                  <benefit.icon className="w-10 h-10 text-white" />
                 </div>
                 
-                <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
                   {benefit.title}
                 </h3>
                 
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-lg">
                   {benefit.description}
                 </p>
               </div>
