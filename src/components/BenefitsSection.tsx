@@ -5,29 +5,29 @@ const BenefitsSection = () => {
   const benefits = [
     {
       icon: TrendingUp,
-      title: "Understand Your Creditworthiness",
-      description: "Get a comprehensive view of your financial health with detailed analysis powered by advanced AI algorithms.",
+      title: "Henkilökohtainen Talousluokitus",
+      description: "Saa kattava näkemys taloudellisesta tilanteestasi PSD2-pohjaisella analyysillä kulutustottumuksistasi.",
       color: "primary",
       gradient: "from-primary/10 to-primary/20",
     },
     {
       icon: Lightbulb,
-      title: "Get Personalized Improvement Tips", 
-      description: "Receive actionable recommendations to boost your credit score and financial standing with AI-driven insights.",
+      title: "Kuukausittaiset Talousneuvoat", 
+      description: "Saa henkilökohtaiset talousneuvoat kuukausittain kulutustottumustesi perusteella parempia taloudellisia päätöksiä varten.",
       color: "warning",
       gradient: "from-warning/10 to-warning/20",
     },
     {
       icon: CreditCard,
-      title: "Prepare for Loan Applications",
-      description: "Know exactly where you stand before applying for mortgages, personal loans, or business financing.",
+      title: "Hallintapaneeli ja PDF-Raportti",
+      description: "Tarkastele tuloksiasi verkossa hallintapaneelissa tai lataa yksityiskohtainen PDF-raportti.",
       color: "success",
       gradient: "from-success/10 to-success/20",
     },
     {
       icon: BarChart3,
-      title: "Smart Credit Analysis",
-      description: "Built with advanced AI technology to provide accurate, comprehensive credit analysis tailored to your profile.",
+      title: "Avoin Pankkitoiminta",
+      description: "Turvallinen PSD2-yhteensopiva analyysi, joka käyttää avoimia pankkitietoja tarkkojen tulosten saamiseksi.",
       color: "info",
       gradient: "from-info/10 to-info/20",
     },
@@ -45,15 +45,15 @@ const BenefitsSection = () => {
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
             <Sparkles className="w-4 h-4" />
-            Why Choose NordFi
+            Miksi Valita NordFi
           </div>
           <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 tracking-tight">
-            Built for Your{" "}
-            <span className="gradient-text">Financial Success</span>
+            Rakennettu Sinun{" "}
+            <span className="gradient-text">Taloudellista Menestystä</span>
           </h2>
           <p className="text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto text-balance leading-relaxed">
-            Get insights that matter for your financial future. Our AI-powered platform provides 
-            comprehensive credit analysis designed to help you make smarter financial decisions.
+            Saa merkityksellisiä näkemyksiä taloudellisesta tulevaisuudestasi. PSD2-pohjainen alustamme 
+            tarjoaa kattavan talousanalyysin, joka auttaa tekemään älykkäämpiä taloudellisia päätöksiä.
           </p>
         </div>
 
@@ -85,18 +85,18 @@ const BenefitsSection = () => {
           <div className="grid md:grid-cols-3 gap-12 text-center">
             <div className="space-y-3">
               <div className="text-5xl font-bold gradient-text">50+</div>
-              <div className="text-muted-foreground font-medium">Financial Factors Analyzed</div>
-              <div className="text-sm text-muted-foreground">Comprehensive assessment</div>
+              <div className="text-muted-foreground font-medium">Taloudellista Tekijää Analysoitu</div>
+              <div className="text-sm text-muted-foreground">Kattava arviointi</div>
             </div>
             <div className="space-y-3">
               <div className="text-5xl font-bold gradient-text">10 min</div>
-              <div className="text-muted-foreground font-medium">Quick Assessment</div>
-              <div className="text-sm text-muted-foreground">Fast and efficient</div>
+              <div className="text-muted-foreground font-medium">Nopea Arviointi</div>
+              <div className="text-sm text-muted-foreground">Nopea ja tehokas</div>
             </div>
             <div className="space-y-3">
               <div className="text-5xl font-bold gradient-text">5+</div>
-              <div className="text-muted-foreground font-medium">Major Banks Integrated</div>
-              <div className="text-sm text-muted-foreground">Leading financial institutions</div>
+              <div className="text-muted-foreground font-medium">Suurinta Pankkia Integroitu</div>
+              <div className="text-sm text-muted-foreground">Johtavat rahoituslaitokset</div>
             </div>
           </div>
         </Card>

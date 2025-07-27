@@ -5,10 +5,10 @@ import heroImage from "@/assets/hero-image.jpg";
 
 const HeroSection = () => {
   const trustIndicators = [
-    { icon: TrendingUp, text: "AI-Powered Analysis", color: "text-primary" },
-    { icon: Shield, text: "GDPR Compliant", color: "text-success" },
-    { icon: CreditCard, text: "Bank-Grade Security", color: "text-warning" },
-    { icon: BarChart3, text: "1000+ Credit Reports", color: "text-info" },
+    { icon: TrendingUp, text: "PSD2-Pohjainen Analyysi", color: "text-primary" },
+    { icon: Shield, text: "GDPR-Yhteensopiva", color: "text-success" },
+    { icon: CreditCard, text: "Pankkitason Turvallisuus", color: "text-warning" },
+    { icon: BarChart3, text: "Avoin Pankkitoiminta", color: "text-info" },
   ];
 
   return (
@@ -27,40 +27,40 @@ const HeroSection = () => {
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
                 <Zap className="w-4 h-4" />
-                AI-Powered Credit Platform
+                PSD2-Pohjainen Talousluokitus
               </div>
               
               <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-[1.1] tracking-tight">
-                Know Your{" "}
+                Henkilökohtainen{" "}
                 <span className="gradient-text">
-                  Credit Score
+                  Talousluokitus
                 </span>
                 <br />
                 <span className="text-4xl lg:text-5xl font-normal text-muted-foreground">
-                  With AI Intelligence
+                  Avoimella Pankkitoiminnalla
                 </span>
               </h1>
               
               <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-xl text-balance">
-                Get your personalized credit assessment powered by advanced AI. 
-                Understand your creditworthiness and improve your financial health with smart insights.
+                Saa henkilökohtainen talousluokitus kulutustottumuksistasi. Tarkastele tulokset 
+                hallintapaneelissa tai lataa PDF. Kuukausittaiset talousneuvoat juuri sinulle.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6">
               <Button variant="hero" size="lg" className="text-lg px-10 py-6 group">
-                Check Your Score Now
+                Tarkista Luokituksesi
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" size="lg" className="px-10 py-6 border-primary text-primary hover:bg-primary hover:text-white">
-                View Sample Report
+                Näytä Esimerkkiraportti
               </Button>
             </div>
 
             {/* Trust Indicators */}
             <div className="pt-6">
               <p className="text-sm font-semibold text-muted-foreground mb-6 uppercase tracking-wider">
-                Trusted by customers worldwide
+                Luotettu suomalaisten keskuudessa
               </p>
               <div className="grid grid-cols-2 gap-6">
                 {trustIndicators.map((indicator, index) => (
@@ -96,21 +96,21 @@ const HeroSection = () => {
             <Card className="absolute -bottom-8 -left-8 p-6 card-dashboard animate-slide-up">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary mb-1">750+</div>
-                <div className="text-sm text-muted-foreground font-medium">Average Score</div>
+                <div className="text-sm text-muted-foreground font-medium">Keskiarvo</div>
               </div>
             </Card>
             
             <Card className="absolute -top-8 -right-8 p-6 card-dashboard animate-slide-up delay-200">
               <div className="text-center">
                 <div className="text-3xl font-bold text-success mb-1">98%</div>
-                <div className="text-sm text-muted-foreground font-medium">Accuracy Rate</div>
+                <div className="text-sm text-muted-foreground font-medium">Tarkkuus</div>
               </div>
             </Card>
 
             <Card className="absolute top-1/2 -left-4 p-4 card-dashboard animate-slide-up delay-500">
               <div className="text-center">
                 <div className="text-2xl font-bold text-warning mb-1">10min</div>
-                <div className="text-xs text-muted-foreground font-medium">Assessment</div>
+                <div className="text-xs text-muted-foreground font-medium">Arviointi</div>
               </div>
             </Card>
           </div>

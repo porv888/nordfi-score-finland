@@ -6,37 +6,37 @@ const HowItWorksSection = () => {
   const steps = [
     {
       icon: UserPlus,
-      title: "Sign Up",
-      description: "Quick registration with email. No credit card required for your free assessment.",
+      title: "Rekisteröidy",
+      description: "Nopea rekisteröinti sähköpostilla. Ei luottokorttia tarvita ilmaiseen arviointiin.",
       time: "2 min",
     },
     {
       icon: BarChart3,
-      title: "Complete Assessment", 
-      description: "Answer questions about your finances, employment, and banking relationships.",
-      time: "8 min",
+      title: "Anna PSD2-Lupa", 
+      description: "Yhdistä pankkitilisi turvallisesti avoimella pankkitoiminnalla kulutustietojen analysointia varten.",
+      time: "5 min",
     },
     {
       icon: TrendingUp,
-      title: "Get Your Score",
-      description: "Receive comprehensive credit analysis with detailed breakdown by category.",
-      time: "Instant",
+      title: "Saa Luokituksesi",
+      description: "Vastaanota kattava talousanalyysi yksityiskohtaisella jaottelulla hallintapaneelissa tai PDF:nä.",
+      time: "Välitön",
     },
     {
       icon: Target,
-      title: "Improve",
-      description: "Follow personalized recommendations to boost your credit health and financial standing.",
-      time: "Ongoing",
+      title: "Kuukausittaiset Neuvoat",
+      description: "Saa henkilökohtaiset talousneuvoat kuukausittain kulutustottumustesi perusteella.",
+      time: "Jatkuva",
     },
   ];
 
   const sampleQuestions = [
-    "Employment status (Student, Employee, Entrepreneur, Retired)",
-    "Monthly income range (€2,000 - €6,000+)",
-    "Housing situation (Rent, Own, Mortgage)",
-    "Primary bank (Nordea, OP-ryhmä, Danske Bank, Handelsbanken)",
-    "Existing loans and credit commitments",
-    "Monthly expenses and savings habits",
+    "Pankkitiliesi tiedot avoimella pankkitoiminnalla (PSD2)",
+    "Kulutustottumuksesi ja säännölliset maksut",
+    "Säästämismallit ja investoinnit",
+    "Lainat ja luottositoumukset",
+    "Tulojen ja menojen kehitys viimeisten kuukausien aikana",
+    "Taloudellisten tavoitteidesi määrittely",
   ];
 
   return (
@@ -44,11 +44,11 @@ const HowItWorksSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            How It Works
+            Miten Se Toimii
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Get your personalized credit assessment in just 10 minutes. Our AI-powered process is designed 
-            to be simple, secure, and specifically adapted for modern banking standards.
+            Saa henkilökohtainen talousluokituksesi vain 10 minuutissa. PSD2-pohjainen prosessimme on 
+            suunniteltu olemaan yksinkertainen, turvallinen ja räätälöity suomalaisille pankeille.
           </p>
         </div>
 
@@ -92,11 +92,11 @@ const HowItWorksSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="text-2xl font-bold text-foreground mb-6">
-              Sample Assessment Questions
+              Mitä Analysoimme
             </h3>
             <p className="text-muted-foreground mb-6">
-              Our AI assessment covers all aspects of your financial profile relevant to modern banking standards. 
-              Here's a preview of what we'll ask:
+              PSD2-pohjaisella analyysillä tarkastelemme taloudellista profiiliasi avoimen pankkitoiminnan avulla. 
+              Tässä esimerkkejä siitä, mitä analysoimme:
             </p>
             
             <div className="space-y-3">
@@ -111,24 +111,24 @@ const HowItWorksSection = () => {
           
           <Card className="p-8 bg-gradient-to-br from-primary/5 to-primary-light/5">
             <h4 className="text-xl font-semibold text-foreground mb-4">
-              Ready to Get Started?
+              Valmis Aloittamaan?
             </h4>
             <p className="text-muted-foreground mb-6">
-              Join thousands of customers who have already improved their credit understanding 
-              with NordFi AI-powered credit scoring.
+              Liity tuhansien asiakkaiden joukkoon, jotka ovat jo parantaneet taloudenhoitoaan 
+              NordFin PSD2-pohjaisella talousluokituksella.
             </p>
             
             <div className="space-y-3">
               <Button variant="default" className="w-full">
-                Start Free Assessment
+                Aloita Ilmainen Arviointi
               </Button>
               <Button variant="outline" className="w-full">
-                View Sample Report
+                Näytä Esimerkkiraportti
               </Button>
             </div>
             
             <p className="text-xs text-muted-foreground mt-4 text-center">
-              No credit card required • GDPR compliant • Bank-grade security
+              Ei luottokorttia tarvita • GDPR-yhteensopiva • Pankkitason turvallisuus
             </p>
           </Card>
         </div>

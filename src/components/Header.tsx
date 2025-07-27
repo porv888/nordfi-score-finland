@@ -6,11 +6,11 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "How It Works", href: "#how-it-works" },
-    { name: "Features", href: "#features" },
-    { name: "Pricing", href: "#pricing" },
-    { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" },
+    { name: "Toiminta", href: "#how-it-works" },
+    { name: "Ominaisuudet", href: "#features" },
+    { name: "Hinnoittelu", href: "#pricing" },
+    { name: "Tietoa Meistä", href: "#about" },
+    { name: "Yhteystiedot", href: "#contact" },
   ];
 
   return (
@@ -42,10 +42,10 @@ const Header = () => {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="ghost" size="sm" className="text-white/80 hover:text-white hover:bg-white/10">
-              Sign In
+              Kirjaudu
             </Button>
             <Button variant="default" size="sm" className="bg-white text-blue-600 hover:bg-white/90 font-semibold">
-              Get Started
+              Aloita Nyt
             </Button>
           </div>
 
@@ -79,10 +79,10 @@ const Header = () => {
               ))}
               <div className="pt-4 space-y-3">
                 <Button variant="ghost" size="sm" className="w-full justify-start text-white/80 hover:text-white hover:bg-white/10">
-                  Sign In
+                  Kirjaudu
                 </Button>
                 <Button variant="default" size="sm" className="w-full bg-white text-blue-600 hover:bg-white/90 font-semibold">
-                  Get Started
+                  Aloita Nyt
                 </Button>
               </div>
             </div>
