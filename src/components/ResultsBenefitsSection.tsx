@@ -6,7 +6,7 @@ const ResultsBenefitsSection = () => {
     {
       icon: TrendingDown,
       title: "Velan vähennys suunnitelmallisesti",
-      description: "Priorisoi maksut AI-järjestyksessä",
+      description: "Priorisoi maksut tekoälyn ehdottamassa järjestyksessä",
       color: "text-success"
     },
     {
@@ -34,7 +34,7 @@ const ResultsBenefitsSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Tulokset & hyödyt
+            Tulokset ja hyödyt
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
             Konkreettiset parannukset taloudessa

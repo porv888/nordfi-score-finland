@@ -6,7 +6,7 @@ const PricingSimpleSection = () => {
   const plans = [
     {
       name: "Ilmainen",
-      price: "0€",
+      price: "0 €",
       period: "ikuisesti",
       features: [
         "Talouspiste",
@@ -19,10 +19,10 @@ const PricingSimpleSection = () => {
     },
     {
       name: "Pro",
-      price: "6,90€",
-      period: "/kk",
+      price: "6,90 €",
+      period: "/ kk",
       features: [
-        "AI-valmentajan kortit",
+        "Tekoälyvalmentajan kortit",
         "Tavoitteet ja hälytykset",
         "PDF-raportit",
         "Kaikki ilmaiset ominaisuudet"

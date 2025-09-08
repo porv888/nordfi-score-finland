@@ -5,7 +5,7 @@ const HowItWorksSection = () => {
     {
       number: "1",
       title: "Yhdistä pankki turvallisesti",
-      description: "Valtuutat pankkisi (PSD2). Emme näe salasanoja; luvan voi perua milloin vain.",
+      description: "Valtuutat pankkisi PSD2-kirjautumisella. Emme näe salasanojasi, ja luvan voi perua milloin tahansa.",
       icon: Shield,
       color: "text-primary"
     },
@@ -19,7 +19,7 @@ const HowItWorksSection = () => {
     {
       number: "3",
       title: "Seuraa ja paranna viikoittain", 
-      description: "Tekoälyvalmentaja päivittää tavoitteet: maksut, kulukaton, säästöt ja puskurin.",
+      description: "Tekoälyvalmentaja päivittää tavoitteet: maksujärjestys, kulukatot, säästöt ja puskurirahasto.",
       icon: Target,
       color: "text-warning"
     }

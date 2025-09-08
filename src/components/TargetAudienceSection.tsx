@@ -5,8 +5,8 @@ const TargetAudienceSection = () => {
   const audiences = [
     {
       icon: GraduationCap,
-      title: "Opiskelija / ensiasunnon säästäjä",
-      description: "Kulukatto ja puskurin rakentaminen",
+      title: "Opiskelijat / ensiasunnon säästäjät",
+      description: "Kulukatot ja puskurin rakentaminen",
       color: "text-primary"
     },
     {
@@ -17,7 +17,7 @@ const TargetAudienceSection = () => {
     },
     {
       icon: Briefcase,
-      title: "Yrittäjä / freelanceri",
+      title: "Yrittäjät ja freelancerit",
       description: "Tulojen vaihtelun hallinta ja laskutusrytmi",
       color: "text-warning"
     }

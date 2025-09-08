@@ -8,7 +8,7 @@ const TestimonialsSection = () => {
       name: "Jukka Virtanen",
       location: "Helsinki",
       occupation: "Software Engineer",
-      testimonial: "NordFin PSD2-analyysi auttoi minua ymmärtämään taloudellista tilannettani ennen asuntolainahakemusta. Henkilökohtaiset näkemykset ja suositukset olivat juuri sitä mitä tarvitsin. Sain hyväksynnän loistavalla korolla!",
+      testimonial: "Xscoren PSD2-analyysi auttoi minua ymmärtämään taloudellista tilannettani ennen asuntolainahakemusta. Henkilökohtaiset näkemykset ja suositukset olivat juuri sitä mitä tarvitsin. Sain hyväksynnän loistavalla korolla!",
       rating: 5,
       initials: "JV"
     },
@@ -16,7 +16,7 @@ const TestimonialsSection = () => {
       name: "Aino Koskinen",
       location: "Tampere", 
       occupation: "Markkinointipäällikkö",
-      testimonial: "PSD2-pohjainen talousanalyysi on uskomattoman yksityiskohtainen ja helppo ymmärtää. NordFi teki kristallinselväksi mitä minun piti parantaa ja auttoi rakentamaan vahvemman taloudellisen profiilin.",
+      testimonial: "PSD2-pohjainen talousanalyysi on uskomattoman yksityiskohtainen ja helppo ymmärtää. Xscore teki kristallinselväksi mitä minun piti parantaa ja auttoi rakentamaan vahvemman taloudellisen profiilin.",
       rating: 5,
       initials: "AK"
     },
@@ -24,17 +24,17 @@ const TestimonialsSection = () => {
       name: "Mikael Laaksonen",
       location: "Turku",
       occupation: "Yrittäjä",
-      testimonial: "Yrittäjänä olin huolissani taloudellisesta asemastani. NordFin PSD2-analyysi antoi minulle selkeyttä taloudelliseen tilanteeseeni konkreettisilla parannusehdotuksilla. Täydellinen yrittäjille!",
+      testimonial: "Yrittäjänä olin huolissani taloudellisesta asemastani. Xscoren PSD2-analyysi antoi minulle selkeyttä taloudelliseen tilanteeseeni konkreettisilla parannusehdotuksilla. Täydellinen yrittäjille!",
       rating: 5,
       initials: "ML"
     }
   ];
 
   const stats = [
-    { value: "1,000+", label: "Tyytyväistä Asiakasta" },
-    { value: "4.9/5", label: "Keskiarvoarvosana" },
-    { value: "750+", label: "Keskimääräinen Pisteparannus" },
-    { value: "98%", label: "Suosittelisi Eteenpäin" }
+    { value: "1,000+", label: "tyytyväistä asiakasta" },
+    { value: "4,9/5", label: "keskiarvoarvosana" },
+    { value: "750+", label: "keskimääräinen pisteparannus" },
+    { value: "98%", label: "suosittelisi eteenpäin" }
   ];
 
   return (
@@ -42,11 +42,11 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Älykkäiden Kuluttajien Luottamus
+            Älykkäiden kuluttajien luottamus
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Liity tuhansien tyytyväisten asiakkaiden joukkoon, jotka ovat parantaneet taloudellista ymmärrystään 
-            ja saavuttaneet tavoitteensa NordFin PSD2-pohjaisella talousluokituksella.
+            ja saavuttaneet tavoitteensa Xscoren PSD2-pohjaisen analyysin avulla.
           </p>
         </div>
 

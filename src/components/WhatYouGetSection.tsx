@@ -11,13 +11,13 @@ const WhatYouGetSection = () => {
     },
     {
       icon: Brain,
-      title: "AI-valmentajan kortit",
+      title: "Tekoälyvalmentajan kortit",
       description: "3–4 konkreettista tehtävää juuri sinulle",
       color: "text-success"
     },
     {
       icon: BarChart3,
-      title: "Kulut & tulot",
+      title: "Kulut ja tulot",
       description: "15+ kategoriaa, trendit ja hälytykset",
       color: "text-info"
     },
@@ -49,7 +49,7 @@ const WhatYouGetSection = () => {
             Mitä saat
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            AI-coach ja metriikat, jotka vievät talouttasi eteenpäin
+            Tekoälyvalmentaja ja mittarit, jotka vievät talouttasi eteenpäin
           </p>
         </div>
 

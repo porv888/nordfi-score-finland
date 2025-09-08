@@ -43,7 +43,7 @@ const HeroSection = () => {
               </h1>
               
               <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-xl text-balance">
-                Xscore analysoi pankkitapahtumasi (PSD2) ja laatii sinulle selkeän toimintasuunnitelman: 
+                Xscore analysoi pankkitapahtumasi PSD2-rajapinnan kautta ja laatii sinulle selkeän toimintasuunnitelman: 
                 mitä tehdä tänään, tässä kuussa ja seuraavaksi.
               </p>
             </div>
@@ -61,7 +61,7 @@ const HeroSection = () => {
             {/* Trust Indicators */}
             <div className="pt-6">
               <p className="text-sm font-semibold text-muted-foreground mb-6 uppercase tracking-wider">
-                EU-PSD2 yhteensopiva · Tietoturva ensisijalla · Suomalainen palvelu
+                EU-PSD2-yhteensopiva · Tietoturva etusijalla · Suomalainen palvelu
               </p>
               <div className="grid grid-cols-2 gap-6">
                 {trustIndicators.map((indicator, index) => (
