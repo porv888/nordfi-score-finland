@@ -1,10 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { TrendingUp, BarChart3, Shield, CreditCard, ArrowRight, Zap } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 // Using uploaded dashboard image directly
 const heroImage = "/lovable-uploads/ee2e006a-0d41-4865-82ae-4aef6d7755aa.png";
 
 const HeroSection = () => {
+  const { toast } = useToast();
+  
+  const handleStartClick = () => {
+    toast({
+      title: "Tulossa pian! 🚀",
+      description: "Alustamme lanseerataan pian. Kiitos kärsivällisyydestäsi!",
+    });
+  };
   const trustIndicators = [
     { icon: TrendingUp, text: "PSD2-Pohjainen Analyysi", color: "text-primary" },
     { icon: Shield, text: "GDPR-Yhteensopiva", color: "text-success" },
@@ -45,7 +54,12 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6">
-              <Button variant="hero" size="lg" className="text-xl px-16 py-8 group">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="text-xl px-16 py-8 group"
+                onClick={handleStartClick}
+              >
                 Aloita ilmaiseksi
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </Button>
