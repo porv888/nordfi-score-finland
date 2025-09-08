@@ -32,13 +32,9 @@ const HeroSection = () => {
               </div>
               
               <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-[1.1] tracking-tight">
-                Optimoi taloutesi ja{" "}
+                Optimoi taloutesi, vähennä velkaa ja rakenna varallisuutta{" "}
                 <span className="gradient-text">
-                  vähennä velkaa
-                </span>
-                <br />
-                <span className="text-3xl lg:text-4xl font-normal text-muted-foreground">
-                  – tekoälyvalmentajan avulla
+                  tekoälyvalmentajan avulla
                 </span>
               </h1>
               
@@ -54,7 +50,7 @@ const HeroSection = () => {
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" size="lg" className="px-12 py-8 text-lg border-primary text-primary hover:bg-primary hover:text-white">
-                Katso esittely (2 min)
+                Katso esittelyvideo (2 min)
               </Button>
             </div>
 

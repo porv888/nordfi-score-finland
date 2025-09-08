@@ -16,7 +16,7 @@ const TestimonialsSection = () => {
       name: "Aino Koskinen",
       location: "Tampere", 
       occupation: "Markkinointipäällikkö",
-      testimonial: "PSD2-pohjainen talousanalyysi on uskomattoman yksityiskohtainen ja helppo ymmärtää. Xscore teki kristallinselväksi mitä minun piti parantaa ja auttoi rakentamaan vahvemman taloudellisen profiilin.",
+      testimonial: "PSD2-pohjainen talousanalyysi on uskomattoman yksityiskohtainen ja helppo ymmärtää. Xscore teki selväksi, mitä minun piti parantaa ja auttoi rakentamaan vahvemman taloudellisen profiilin.",
       rating: 5,
       initials: "AK"
     },
@@ -24,17 +24,17 @@ const TestimonialsSection = () => {
       name: "Mikael Laaksonen",
       location: "Turku",
       occupation: "Yrittäjä",
-      testimonial: "Yrittäjänä olin huolissani taloudellisesta asemastani. Xscoren PSD2-analyysi antoi minulle selkeyttä taloudelliseen tilanteeseeni konkreettisilla parannusehdotuksilla. Täydellinen yrittäjille!",
+      testimonial: "Yrittäjänä olin huolissani taloudestani. Xscoren analyysi antoi selkeyttä tilanteeseeni ja konkreettisia parannusehdotuksia. Täydellinen yrittäjille!",
       rating: 5,
       initials: "ML"
     }
   ];
 
   const stats = [
-    { value: "1,000+", label: "tyytyväistä asiakasta" },
-    { value: "4,9/5", label: "keskiarvoarvosana" },
+    { value: "1 000+", label: "tyytyväistä asiakasta" },
+    { value: "4,9 / 5", label: "keskiarvoarvosana" },
     { value: "750+", label: "keskimääräinen pisteparannus" },
-    { value: "98%", label: "suosittelisi eteenpäin" }
+    { value: "98 %", label: "suosittelisi eteenpäin" }
   ];
 
   return (
@@ -45,8 +45,7 @@ const TestimonialsSection = () => {
             Älykkäiden kuluttajien luottamus
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Liity tuhansien tyytyväisten asiakkaiden joukkoon, jotka ovat parantaneet taloudellista ymmärrystään 
-            ja saavuttaneet tavoitteensa Xscoren PSD2-pohjaisen analyysin avulla.
+            Liity tuhansien tyytyväisten asiakkaiden joukkoon, jotka ovat parantaneet taloudellista tilannettaan Xscoren avulla.
           </p>
         </div>
 

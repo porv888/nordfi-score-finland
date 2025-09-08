@@ -11,15 +11,15 @@ const HowItWorksSection = () => {
     },
     {
       number: "2", 
-      title: "Saat pisteet ja suunnitelman",
-      description: "Xscore laskee talouspisteesi (300–1000) ja näyttää vahvuudet, riskit ja nopeat voitot.",
+      title: "Saat talouspisteet ja suunnitelman",
+      description: "Xscore laskee pisteesi (300–1000) ja näyttää vahvuudet, riskit sekä nopeimmat parannuskohteet.",
       icon: TrendingUp,
       color: "text-success"
     },
     {
       number: "3",
-      title: "Seuraa ja paranna viikoittain", 
-      description: "Tekoälyvalmentaja päivittää tavoitteet: maksujärjestys, kulukatot, säästöt ja puskurirahasto.",
+      title: "Seuraa kehitystä ja paranna viikoittain", 
+      description: "Tekoälyvalmentaja päivittää tavoitteet: maksujärjestys, säästökatot ja puskurirahasto.",
       icon: Target,
       color: "text-warning"
     }
@@ -30,11 +30,8 @@ const HowItWorksSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Miten Xscore toimii
+            Miten Xscore toimii – kolme yksinkertaista askelta parempaan talouteen
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Kolme yksinkertaista askelta parempaan talouteen
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">

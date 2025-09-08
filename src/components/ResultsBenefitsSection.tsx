@@ -5,26 +5,26 @@ const ResultsBenefitsSection = () => {
   const benefits = [
     {
       icon: TrendingDown,
-      title: "Velan vähennys suunnitelmallisesti",
+      title: "Velkojen vähentäminen suunnitelmallisesti",
       description: "Priorisoi maksut tekoälyn ehdottamassa järjestyksessä",
       color: "text-success"
     },
     {
       icon: PiggyBank,
       title: "Parempi puskurirahasto", 
-      description: "Tavoite ja automaattinen seuranta",
+      description: "Seuraa tavoitettasi ja säästä automaattisesti",
       color: "text-primary"
     },
     {
       icon: Shield,
       title: "Vähemmän yllätyksiä",
-      description: "Hälytys, kun kulut nousevat yli rajan",
+      description: "Saat hälytyksen, kun kulut ylittävät rajan",
       color: "text-warning"
     },
     {
       icon: BarChart,
       title: "Selkeä eteneminen",
-      description: "Viikkopalautteet ja trendit",
+      description: "Viikkopalautteet ja trendit näyttävät edistymisesi",
       color: "text-info"
     }
   ];
@@ -34,11 +34,8 @@ const ResultsBenefitsSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Tulokset ja hyödyt
+            Tulokset ja hyödyt – konkreettiset parannukset taloudessasi
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            Konkreettiset parannukset taloudessa
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">

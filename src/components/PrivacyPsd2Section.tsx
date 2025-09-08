@@ -6,13 +6,13 @@ const PrivacyPsd2Section = () => {
   const securityFeatures = [
     {
       icon: Lock,
-      title: "Salaus levossa ja siirrossa",
+      title: "Salaus tallennuksessa ja siirrossa",
       description: "Kaikki tiedot suojataan pankkitason salauksella"
     },
     {
       icon: Eye,
       title: "Minimitietojen periaate",
-      description: "Käsittelemme vain tarpeelliset tiedot"
+      description: "Käsittelemme vain välttämättömät tiedot"
     },
     {
       icon: Shield,
@@ -22,7 +22,7 @@ const PrivacyPsd2Section = () => {
     {
       icon: FileCheck,
       title: "Oikeuksien hallinta",
-      description: "Voit hallita ja poistaa tietosi milloin vain"
+      description: "Voit hallita ja poistaa tietosi milloin tahansa"
     }
   ];
 
@@ -31,11 +31,8 @@ const PrivacyPsd2Section = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Tietosuoja ja PSD2
+            Tietosuoja ja PSD2 – tietoturva ja yksityisyys ensin
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Tietoturva ja yksityisyys ensin
-          </p>
         </div>
 
         <div className="max-w-4xl mx-auto space-y-12">
@@ -45,7 +42,7 @@ const PrivacyPsd2Section = () => {
                 <p className="text-lg leading-relaxed mb-6">
                   Käytämme <strong className="text-foreground">EU-PSD2-rajapintoja</strong> pankkiyhteyteen. 
                   Pankkitunnuksia ei jaeta palvelulle. Voit poistaa luvan milloin tahansa. 
-                  Tiedot käsitellään EU-alueella ja <strong className="text-foreground">GDPR:n mukaisesti</strong>.
+                  Tietosi käsitellään EU-alueella ja <strong className="text-foreground">GDPR:n mukaisesti</strong>.
                 </p>
               </div>
             </CardContent>

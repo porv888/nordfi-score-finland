@@ -11,7 +11,7 @@ const PricingSimpleSection = () => {
       features: [
         "Talouspiste",
         "Perusnäkymä", 
-        "Viikkopäivitys"
+        "Viikkoraportit"
       ],
       cta: "Aloita ilmaiseksi",
       variant: "outline" as const,
@@ -38,11 +38,8 @@ const PricingSimpleSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Hinnat
+            Hinnat – yksinkertainen hinnoittelu ilman yllätyksiä
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Yksinkertainen hinnoittelu ilman yllätyksiä
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -97,7 +94,7 @@ const PricingSimpleSection = () => {
 
         <div className="text-center mt-8">
           <p className="text-muted-foreground">
-            <strong className="text-foreground">Ei korttia alussa.</strong> Pro-tilaus ilman sitoutumista.
+            <strong className="text-foreground">Ei korttia alussa</strong> – kokeile Pro ilman sitoutumista.
           </p>
         </div>
       </div>

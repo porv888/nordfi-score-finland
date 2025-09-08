@@ -5,20 +5,20 @@ const TargetAudienceSection = () => {
   const audiences = [
     {
       icon: GraduationCap,
-      title: "Opiskelijat / ensiasunnon säästäjät",
-      description: "Kulukatot ja puskurin rakentaminen",
+      title: "Opiskelijat ja ensiasunnon säästäjät",
+      description: "Luo kulukatot ja rakenna puskurirahasto",
       color: "text-primary"
     },
     {
       icon: Users,
       title: "Perhe",
-      description: "Kuukausibudjetti ja toistuvien kulujen optimointi",
+      description: "Hallitse kuukausibudjettia ja optimoi toistuvat kulut",
       color: "text-success"
     },
     {
       icon: Briefcase,
       title: "Yrittäjät ja freelancerit",
-      description: "Tulojen vaihtelun hallinta ja laskutusrytmi",
+      description: "Tasapainota tulojen vaihtelut ja laskutusrytmi",
       color: "text-warning"
     }
   ];
@@ -28,11 +28,8 @@ const TargetAudienceSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Kenelle
+            Kenelle Xscore sopii
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Xscore sopii kaikille, jotka haluavat parantaa talouttaan
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">

@@ -6,11 +6,11 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "Toiminta", href: "#how-it-works" },
-    { name: "Ominaisuudet", href: "#features" },
-    { name: "Hinnoittelu", href: "#pricing" },
-    { name: "Tietoa Meistä", href: "#about" },
-    { name: "Yhteystiedot", href: "#contact" },
+    { name: "Miten toimii", href: "#how-it-works" },
+    { name: "Ominaisuudet", href: "#what-you-get" },
+    { name: "Hinnat", href: "#pricing" },
+    { name: "Tietoa", href: "#privacy" },
+    { name: "Yhteys", href: "#contact" },
   ];
 
   return (

@@ -17,26 +17,26 @@ const WhatYouGetSection = () => {
     },
     {
       icon: BarChart3,
-      title: "Kulut ja tulot",
+      title: "Tulot ja menot",
       description: "15+ kategoriaa, trendit ja hälytykset",
       color: "text-info"
     },
     {
       icon: AlertTriangle,
-      title: "Riskit",
-      description: "Pelikulut, velkakuorma, kulujen vaihtelu",
+      title: "Riskit ja varoitukset",
+      description: "Pelikulut, velkataakka, kulujen vaihtelu",
       color: "text-warning"
     },
     {
       icon: Target,
-      title: "Strategia",
-      description: "90 päivää, 6 kuukautta, 1 vuosi",
+      title: "Toimintastrategia",
+      description: "Suunnitelma 90 päivälle, 6 kuukaudelle ja 1 vuodelle",
       color: "text-secondary"
     },
     {
       icon: FileText,
       title: "PDF-raportit",
-      description: "Jaa tai arkistoi tarvittaessa",
+      description: "Jaa tai arkistoi helposti",
       color: "text-muted-foreground"
     }
   ];
@@ -46,11 +46,8 @@ const WhatYouGetSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Mitä saat
+            Mitä saat – tekoälyvalmentaja ja mittarit, jotka vievät talouttasi eteenpäin
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Tekoälyvalmentaja ja mittarit, jotka vievät talouttasi eteenpäin
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">

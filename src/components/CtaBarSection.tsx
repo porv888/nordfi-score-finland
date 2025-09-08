@@ -11,7 +11,7 @@ const CtaBarSection = () => {
           </h2>
           
           <p className="text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto">
-            Kytke pankki turvallisesti ja saat ensimmäiset AI-tehtävät 2 minuutissa.
+            Liity yli 1 000 käyttäjän joukkoon ja aloita tänään!
           </p>
           
           <Button variant="hero" size="lg" className="text-xl px-16 py-8 group">
