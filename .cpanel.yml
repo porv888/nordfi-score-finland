@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - /bin/rm -rf /home/xcore/public_html/*
+    - /opt/cpanel/ea-nodejs20/bin/npm --prefix /home/xcore/repositories2/nordfi-score-finland install
+    - NODE_OPTIONS="--max-old-space-size=8192" /opt/cpanel/ea-nodejs20/bin/npm --prefix /home/xcore/repositories2/nordfi-score-finland run build
+    - /bin/cp -r /home/xcore/repositories2/nordfi-score-finland/dist/* /home/xcore/public_html/
