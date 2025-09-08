@@ -49,9 +49,6 @@ const HeroSection = () => {
                 Aloita ilmaiseksi
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="lg" className="px-12 py-8 text-lg border-primary text-primary hover:bg-primary hover:text-white">
-                Katso esittelyvideo (2 min)
-              </Button>
             </div>
 
             {/* Trust Indicators */}
@@ -97,12 +94,6 @@ const HeroSection = () => {
               </div>
             </Card>
 
-            <Card className="absolute top-1/2 -left-4 p-4 card-dashboard animate-slide-up delay-300">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-warning mb-1">2min</div>
-                <div className="text-xs text-muted-foreground font-medium">Suunnitelma</div>
-              </div>
-            </Card>
           </div>
         </div>
       </div>
