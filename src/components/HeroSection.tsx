@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { TrendingUp, BarChart3, Shield, CreditCard, ArrowRight, Zap } from "lucide-react";
-import heroImage from "@/assets/hero-image.jpg";
+import heroImage from "@/assets/dashboard-hero.png";
 
 const HeroSection = () => {
   const trustIndicators = [
@@ -84,8 +84,8 @@ const HeroSection = () => {
                 <div className="relative">
                   <img
                     src={heroImage}
-                    alt="Credit score dashboard showing financial analysis and scoring metrics"
-                    className="w-full h-auto object-cover"
+                    alt="Xscore dashboard showing real Finnish credit score analysis with 197 score, financial metrics, and AI coaching recommendations"
+                    className="w-full h-auto object-cover rounded-lg"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                 </div>
