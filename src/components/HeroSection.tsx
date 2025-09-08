@@ -28,7 +28,7 @@ const HeroSection = () => {
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
                 <Zap className="w-4 h-4" />
-                NordFi – EU-PSD2 yhteensopiva
+                Xscore – EU-PSD2 yhteensopiva
               </div>
               
               <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-[1.1] tracking-tight">
@@ -43,7 +43,7 @@ const HeroSection = () => {
               </h1>
               
               <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-xl text-balance">
-                NordFi analysoi pankkitapahtumasi (PSD2) ja laatii sinulle selkeän toimintasuunnitelman: 
+                Xscore analysoi pankkitapahtumasi (PSD2) ja laatii sinulle selkeän toimintasuunnitelman: 
                 mitä tehdä tänään, tässä kuussa ja seuraavaksi.
               </p>
             </div>

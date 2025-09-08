@@ -9,7 +9,7 @@ const FaqSection = () => {
   const faqs = [
     {
       question: "Miten pankkiyhteys toimii?",
-      answer: "NordFi käyttää PSD2-rajapintoja. Valtuutus tehdään pankkisi sivulla. Voit perua luvan koska vain."
+      answer: "Xscore käyttää PSD2-rajapintoja. Valtuutus tehdään pankkisi sivulla. Voit perua luvan koska vain."
     },
     {
       question: "Näettekö tilitietoni?",
@@ -17,7 +17,7 @@ const FaqSection = () => {
     },
     {
       question: "Vaikuttaako tämä luottotietoihini?",
-      answer: "Ei. NordFi ei tee kovia luottokyselyitä. Tarkoitus on parantaa talouden perusmittareita."
+      answer: "Ei. Xscore ei tee kovia luottokyselyitä. Tarkoitus on parantaa talouden perusmittareita."
     },
     {
       question: "Mitä mittareita seuraatte?",

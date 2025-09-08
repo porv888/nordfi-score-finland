@@ -12,7 +12,7 @@ const HowItWorksSection = () => {
     {
       number: "2", 
       title: "Saat pisteet ja suunnitelman",
-      description: "NordFi laskee talouspisteesi (300–1000) ja näyttää vahvuudet, riskit ja nopeat voitot.",
+      description: "Xscore laskee talouspisteesi (300–1000) ja näyttää vahvuudet, riskit ja nopeat voitot.",
       icon: TrendingUp,
       color: "text-success"
     },
@@ -30,7 +30,7 @@ const HowItWorksSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Miten NordFi toimii
+            Miten Xscore toimii
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Kolme yksinkertaista askelta parempaan talouteen

@@ -31,7 +31,7 @@ const TargetAudienceSection = () => {
             Kenelle
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            NordFi sopii kaikille, jotka haluavat parantaa talouttaan
+            Xscore sopii kaikille, jotka haluavat parantaa talouttaan
           </p>
         </div>
 

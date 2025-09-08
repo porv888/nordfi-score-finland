@@ -67,7 +67,7 @@ const ResultsBenefitsSection = () => {
 
         <div className="bg-secondary/20 rounded-2xl p-8 max-w-3xl mx-auto text-center">
           <p className="text-lg text-muted-foreground">
-            <strong className="text-foreground">Pieni huomio:</strong> NordFi ei ole luotonantaja. 
+            <strong className="text-foreground">Pieni huomio:</strong> Xscore ei ole luotonantaja. 
             Autamme sinua parantamaan taloutesi perustaa.
           </p>
         </div>
