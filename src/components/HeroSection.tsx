@@ -31,14 +31,14 @@ const HeroSection = () => {
                 Xscore – EU-PSD2 yhteensopiva
               </div>
               
-              <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-[1.1] tracking-tight">
+              <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-[1.1] tracking-tight">
                 Optimoi taloutesi, vähennä velkaa ja rakenna varallisuutta{" "}
                 <span className="gradient-text">
                   tekoälyvalmentajan avulla
                 </span>
               </h1>
               
-              <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-xl text-balance">
+              <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-xl text-balance">
                 Xscore analysoi pankkitapahtumasi PSD2-rajapinnan kautta ja laatii sinulle selkeän toimintasuunnitelman: 
                 mitä tehdä tänään, tässä kuussa ja seuraavaksi.
               </p>
