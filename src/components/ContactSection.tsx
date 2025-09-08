@@ -10,7 +10,7 @@ const ContactSection = () => {
       icon: Mail,
       title: "Sähköpostituki",
       description: "Saa apua suomalaiselta asiakasmenestystiimiltämme",
-      contact: "support@nordfi.fi",
+      contact: "support@xscore.fi",
       responseTime: "24 tunnin sisällä"
     },
     {
@@ -31,8 +31,8 @@ const ContactSection = () => {
 
   const faqs = [
     {
-      question: "Miten NordFi eroaa kansainvälisistä talouspalveluista?",
-      answer: "NordFi on rakennettu erityisesti Suomen markkinoille, ymmärtäen paikalliset pankit, työllisyystyypit ja säädökset."
+      question: "Miten Xscore eroaa kansainvälisistä talouspalveluista?",
+      answer: "Xscore on rakennettu erityisesti Suomen markkinoille, ymmärtäen paikalliset pankit, työllisyystyypit ja säädökset."
     },
     {
       question: "Ovatko tietoni turvassa ja GDPR-yhteensopivia?",

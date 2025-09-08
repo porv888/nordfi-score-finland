@@ -38,7 +38,7 @@ const BenefitsSection = () => {
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
             <Sparkles className="w-4 h-4" />
-            Miksi Valita NordFi
+            Miksi Valita Xscore
           </div>
           <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 tracking-tight">
             Rakennettu Sinun{" "}

@@ -57,7 +57,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-primary-foreground/20 rounded-lg flex items-center justify-center">
                 <TrendingUp className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold">NordFi</span>
+              <span className="text-xl font-bold">Xscore</span>
             </div>
             <p className="text-primary-foreground/80 text-sm mb-6">
               Taloustietojen demokratisointi suomalaisille kuluttajille kattavalla, 
@@ -71,7 +71,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2 text-sm">
                 <Mail className="w-4 h-4" />
-                <span>support@nordfi.fi</span>
+                <span>support@xscore.fi</span>
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-primary-foreground/80">
-              © 2024 NordFi Luokitusalusta. Kaikki oikeudet pidätetään.
+              © 2024 Xscore Luokitusalusta. Kaikki oikeudet pidätetään.
             </div>
             
             <div className="flex space-x-6 text-sm text-primary-foreground/80">
