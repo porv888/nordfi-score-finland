@@ -1,7 +1,5 @@
 ---
 deployment:
   tasks:
-    - /opt/cpanel/ea-nodejs20/bin/npm --prefix /home/xcore/repositories2/nordfi-score-finland install
-    - NODE_OPTIONS="--max-old-space-size=8192" /opt/cpanel/ea-nodejs20/bin/npm --prefix /home/xcore/repositories2/nordfi-score-finland run build
-    - /bin/rm -rf /home/xcore/public_html/*
-    - /bin/cp -r /home/xcore/repositories2/nordfi-score-finland/dist/* /home/xcore/public_html/
+    - NODE_OPTIONS="--max-old-space-size=8192" /opt/cpanel/ea-nodejs20/bin/npm --prefix /home/xcore/repositories2/nordfi-score-finland run build || echo "⚠️ Build failed, skipping deploy"
+    - test -f /home/xcore/repositories2/nordfi-score-finland/dist/index.html && (rm -rf /home/xcore/public_html/* && cp -r /home/xcore/repositories2/nordfi-score-finland/dist/* /home/xcore/public_html/) || echo "⚠️ No dist/index.html, nothing copied"
