@@ -1,7 +1,12 @@
 ---
 deployment:
   tasks:
-    - /bin/rm -rf /home/xcore/public_html/*
+    - echo "🔄 Installing dependencies..."
     - /opt/cpanel/ea-nodejs20/bin/npm --prefix /home/xcore/repositories2/nordfi-score-finland install
+    - echo "⚡ Building project..."
     - NODE_OPTIONS="--max-old-space-size=8192" /opt/cpanel/ea-nodejs20/bin/npm --prefix /home/xcore/repositories2/nordfi-score-finland run build
+    - echo "🧹 Cleaning public_html..."
+    - /bin/rm -rf /home/xcore/public_html/*
+    - echo "📂 Copying build to public_html..."
     - /bin/cp -r /home/xcore/repositories2/nordfi-score-finland/dist/* /home/xcore/public_html/
+    - echo "✅ Deployment complete!"
