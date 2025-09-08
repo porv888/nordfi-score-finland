@@ -1,0 +1,64 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { GraduationCap, Users, Briefcase } from "lucide-react";
+
+const TargetAudienceSection = () => {
+  const audiences = [
+    {
+      icon: GraduationCap,
+      title: "Opiskelija / ensiasunnon säästäjä",
+      description: "Kulukatto ja puskurin rakentaminen",
+      color: "text-primary"
+    },
+    {
+      icon: Users,
+      title: "Perhe",
+      description: "Kuukausibudjetti ja toistuvien kulujen optimointi",
+      color: "text-success"
+    },
+    {
+      icon: Briefcase,
+      title: "Yrittäjä / freelanceri",
+      description: "Tulojen vaihtelun hallinta ja laskutusrytmi",
+      color: "text-warning"
+    }
+  ];
+
+  return (
+    <section id="target-audience" className="py-24 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            Kenelle
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            NordFi sopii kaikille, jotka haluavat parantaa talouttaan
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {audiences.map((audience, index) => (
+            <Card key={index} className="card-dashboard h-full">
+              <CardContent className="p-8 text-center">
+                <div className="space-y-6">
+                  <div className="w-16 h-16 mx-auto bg-gradient-to-br from-background to-secondary rounded-2xl flex items-center justify-center shadow-lg">
+                    <audience.icon className={`w-8 h-8 ${audience.color}`} />
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-foreground">
+                    {audience.title}
+                  </h3>
+                  
+                  <p className="text-muted-foreground leading-relaxed">
+                    {audience.description}
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default TargetAudienceSection;

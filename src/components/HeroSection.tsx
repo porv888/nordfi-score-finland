@@ -28,40 +28,40 @@ const HeroSection = () => {
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
                 <Zap className="w-4 h-4" />
-                Xscore - PSD2 Luottoluokitus
+                NordFi – EU-PSD2 yhteensopiva
               </div>
               
               <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-[1.1] tracking-tight">
-                Saa Henkilökohtainen{" "}
+                Optimoi taloutesi ja{" "}
                 <span className="gradient-text">
-                  Luottoluokituksesi
+                  vähennä velkaa
                 </span>
                 <br />
                 <span className="text-3xl lg:text-4xl font-normal text-muted-foreground">
-                  1 Minuutissa
+                  – tekoälyvalmentajan avulla
                 </span>
               </h1>
               
               <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-xl text-balance">
-                AI-powered luottoluokitus 300-1000 asteikolla. Reaaliaikainen analyysi pankkitiedoistasi. 
-                PDF-raportti ja henkilökohtaiset parannusehdotukset.
+                NordFi analysoi pankkitapahtumasi (PSD2) ja laatii sinulle selkeän toimintasuunnitelman: 
+                mitä tehdä tänään, tässä kuussa ja seuraavaksi.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6">
               <Button variant="hero" size="lg" className="text-xl px-16 py-8 group">
-                ALOITA NYT - ILMAINEN
+                Aloita ilmaiseksi
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" size="lg" className="px-12 py-8 text-lg border-primary text-primary hover:bg-primary hover:text-white">
-                Katso Esimerkki
+                Katso esittely (2 min)
               </Button>
             </div>
 
             {/* Trust Indicators */}
             <div className="pt-6">
               <p className="text-sm font-semibold text-muted-foreground mb-6 uppercase tracking-wider">
-                Luotettu suomalaisten keskuudessa
+                EU-PSD2 yhteensopiva · Tietoturva ensisijalla · Suomalainen palvelu
               </p>
               <div className="grid grid-cols-2 gap-6">
                 {trustIndicators.map((indicator, index) => (
@@ -103,8 +103,8 @@ const HeroSection = () => {
 
             <Card className="absolute top-1/2 -left-4 p-4 card-dashboard animate-slide-up delay-300">
               <div className="text-center">
-                <div className="text-2xl font-bold text-warning mb-1">1min</div>
-                <div className="text-xs text-muted-foreground font-medium">Arviointi</div>
+                <div className="text-2xl font-bold text-warning mb-1">2min</div>
+                <div className="text-xs text-muted-foreground font-medium">Suunnitelma</div>
               </div>
             </Card>
           </div>
