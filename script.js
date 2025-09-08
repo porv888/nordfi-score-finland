@@ -1,5 +1,21 @@
-// Initialize Lucide icons
-lucide.createIcons();
+// Initialize Lucide icons when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Lucide icons
+    if (typeof lucide !== 'undefined') {
+        console.log('Initializing Lucide icons...');
+        lucide.createIcons();
+        console.log('Lucide icons initialized');
+    } else {
+        console.error('Lucide library not loaded');
+    }
+    
+    // Reinitialize icons after a short delay to ensure they render
+    setTimeout(() => {
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+    }, 100);
+});
 
 // Mobile menu functionality
 document.addEventListener('DOMContentLoaded', function() {

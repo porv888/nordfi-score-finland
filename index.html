@@ -20,7 +20,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
     
-    <!-- Lucide Icons -->
+    <!-- Lucide Icons - Load before body content -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
 <body>
@@ -110,7 +110,10 @@
 
                 <div class="hero-visual">
                     <div class="hero-card main-card">
-                        <img src="src/assets/dashboard-hero.png" alt="Xscore Dashboard" class="hero-image">
+                        <div class="hero-placeholder">
+                            <i data-lucide="bar-chart-3" style="width: 100%; height: auto; min-height: 200px;"></i>
+                            <p>Dashboard Preview</p>
+                        </div>
                     </div>
                     <div class="hero-card floating-card card-1">
                         <div class="metric">

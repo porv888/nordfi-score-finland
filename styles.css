@@ -399,6 +399,23 @@ body {
     border-radius: var(--radius);
 }
 
+.hero-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-hero);
+    border-radius: var(--radius);
+    padding: 3rem;
+    min-height: 200px;
+    color: var(--primary);
+}
+
+.hero-placeholder p {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
 .floating-card {
     position: absolute;
     padding: 1rem;
