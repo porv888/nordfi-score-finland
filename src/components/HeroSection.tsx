@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { TrendingUp, BarChart3, Shield, CreditCard, ArrowRight, Zap } from "lucide-react";
-import heroImage from "@/assets/dashboard-hero.png";
+// Using uploaded dashboard image directly
+const heroImage = "/lovable-uploads/ee2e006a-0d41-4865-82ae-4aef6d7755aa.png";
 
 const HeroSection = () => {
   const trustIndicators = [
