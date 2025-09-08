@@ -38,7 +38,7 @@ const HeroSection = () => {
                 </span>
                 <br />
                 <span className="text-3xl lg:text-4xl font-normal text-muted-foreground">
-                  10 Minuutissa
+                  1 Minuutissa
                 </span>
               </h1>
               
@@ -93,13 +93,6 @@ const HeroSection = () => {
               </Card>
             </div>
             
-            {/* Floating Stats - Dashboard Style */}
-            <Card className="absolute -bottom-8 -left-8 p-6 card-dashboard animate-slide-up">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">750+</div>
-                <div className="text-sm text-muted-foreground font-medium">Keskiarvo</div>
-              </div>
-            </Card>
             
             <Card className="absolute -top-8 -right-8 p-6 card-dashboard animate-slide-up delay-200">
               <div className="text-center">
@@ -108,9 +101,9 @@ const HeroSection = () => {
               </div>
             </Card>
 
-            <Card className="absolute top-1/2 -left-4 p-4 card-dashboard animate-slide-up delay-500">
+            <Card className="absolute top-1/2 -left-4 p-4 card-dashboard animate-slide-up delay-300">
               <div className="text-center">
-                <div className="text-2xl font-bold text-warning mb-1">10min</div>
+                <div className="text-2xl font-bold text-warning mb-1">1min</div>
                 <div className="text-xs text-muted-foreground font-medium">Arviointi</div>
               </div>
             </Card>
