@@ -1,9 +1,11 @@
-import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const FaqSection = () => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
   const faqs = [
     {
       question: "Miten pankkiyhteys toimii?",
@@ -31,10 +33,6 @@ const FaqSection = () => {
     }
   ];
 
-  const toggleFaq = (index: number) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
-
   return (
     <section id="faq" className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,32 +45,19 @@ const FaqSection = () => {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-4">
-          {faqs.map((faq, index) => (
-            <div key={index} className="border border-border rounded-lg overflow-hidden">
-              <button
-                className="w-full px-6 py-4 text-left flex items-center justify-between bg-background hover:bg-accent transition-colors"
-                onClick={() => toggleFaq(index)}
-              >
-                <span className="text-lg font-semibold text-foreground">
+        <div className="max-w-3xl mx-auto">
+          <Accordion type="single" collapsible className="space-y-4">
+            {faqs.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left text-lg font-semibold text-foreground hover:no-underline">
                   {faq.question}
-                </span>
-                <ChevronDown 
-                  className={`w-5 h-5 text-muted-foreground transition-transform ${
-                    activeIndex === index ? 'rotate-180' : ''
-                  }`}
-                />
-              </button>
-              
-              {activeIndex === index && (
-                <div className="px-6 pb-4">
-                  <p className="text-muted-foreground leading-relaxed">
-                    {faq.answer}
-                  </p>
-                </div>
-              )}
-            </div>
-          ))}
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>
