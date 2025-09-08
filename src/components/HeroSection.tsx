@@ -13,7 +13,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="relative min-h-[90vh] flex items-center bg-gradient-mesh overflow-hidden">
+    <section className="relative min-h-[60vh] flex items-center bg-gradient-mesh overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-pulse" />
